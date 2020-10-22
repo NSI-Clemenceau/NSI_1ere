@@ -26,7 +26,7 @@ Les élèves sont accompagnés pour travailler ces notebooks. Ils doivent les co
 
 ### En bref !
 
-Chaque début de cours est ponctué d'un (ou plusieurs) exposés à oral, chacun effectué par un seul élève. 
+Chaque début de cours est ponctué d'un (ou plusieurs) exposés à oral, chacun effectué par un seul élève.
 
 Cet exposé, appelé "En Bref !", a pour sujet (au choix de l'élève) :
 
@@ -48,8 +48,8 @@ La progression ne suit pas la numérotation de chapitres.
 
 Voici une progression possible :
 
-| Numéro de chapitre | Nom du fichier |
-| :----------------: | :------------: |
+| Numéro de chapitre | Nom du fichier |  
+|:----------------:|:------------:|
 |0| NSI_0_Introduction_aux_notebooks|
 |||
 |1|NSI_1_1_Ecrire_un_nombre_entier_positif|
@@ -74,10 +74,10 @@ Voici une progression possible :
 |2|NSI_2_8E_Exercices_sur_les_boucles|
 |2|NSI_2_8EC_Exercices_sur_les_boucles|
 |||
-|3|NSI_3_1_Type _construit_Les_Tuples|
-|3|NSI_3_2_Type _construit_Les_Tableaux|
-|3|NSI_3_3_Type _construit_Les_Dictionnaires|
-|3|NSI_3_4A_Type _construit_Les_Ensembles|
+|3|NSI_3_1_Type_construit_Les_Tuples|
+|3|NSI_3_2_Type_construit_Les_Tableaux|
+|3|NSI_3_3_Type_construit_Les_Dictionnaires|
+|3|NSI_3_4A_Type_construit_Les_Ensembles|
 |||
 |P|NSI_P1_Le_Choixpeau_magique_Du_CSV_aux_Tables|
 |P|NSI_P1C_Le_Choixpeau_magique_Du_CSV_aux_Tables|
@@ -86,6 +86,9 @@ Voici une progression possible :
 |2|NSI_2_10A_Les_Fonctions_avancees|
 |2|NSI_2_9E_Les_Fonctions|
 |2|NSI_2_9C_Les_Fonctions|
+|||
+|P|NSI_P2_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
+|P|NSI_P2C_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
 
 ## Licence
 
