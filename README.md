@@ -2,9 +2,9 @@
 
 ## Contenu du dépôt
 
-Ce dépôt compile les cours de première, dispensés au Lycée Clemenceau à Nantes, en spécialité NSI (Numérique et Sciences Informatiques).
+Ce dépôt compile les __cours de première, dispensés au Lycée Clemenceau à Nantes, en spécialité NSI__(Numérique et Sciences Informatiques).
 
-Ces cours sont essentiellement composés de notebooks.
+Ces cours sont essentiellement composés de __notebooks__.
 
 Ces notebooks peuvent être :
 
@@ -14,21 +14,30 @@ Ces notebooks peuvent être :
 - un moyen d'approfondir un thème, hors programme (NSI_X_XA_....ipynb)
 - un "fil rouge", organisé comme un projet guidé, sur le thème "Harry Potter" (NSI_PX_....ipynb))
 
-Ils sont déposés au fur et à mesure de leur élaboration et sont mis à jour au besoin.
+Ils sont déposés au fur et à mesure de leur élaboration depuis la rentrée 2020 et sont mis à jour au besoin.
 
 Les sujet d'évaluation, à part les projets, ne sont pas mis en ligne.
+
+## Visualisation / modification et exécution des notebooks
+
+Framagit ne permet pas d'utiliser, ni même de pleinement visualiser nativement les notebooks Jupyter.
+
+Pour profiter pleinement des notebooks, deux options semblent intéressantes :
+
+- __cloner ce dépôt__, puis en profiter en local.
+- utiliser ce lien __Binder__ pour une utilisation "en ligne" [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fframagit.org%2Fdlandry%2Fnsi/master)
 
 ## Méthodologie pédagogique
 
 ### Travail sur les notebooks
 
-Les élèves sont accompagnés pour travailler ces notebooks. Ils doivent les compléter / annoter afin d'en faire un support de cours et de révision.
+Les élèves sont accompagnés pour travailler ces notebooks. Ils doivent les compléter / annoter afin d'en faire un __support de cours et de révision__.
 
 ### En bref !
 
-Chaque début de cours est ponctué d'un (ou plusieurs) exposés à oral, chacun effectué par un seul élève.
+Chaque début de cours est ponctué d'un (ou plusieurs) __exposés à oral__, chacun effectué par un seul élève.
 
-Cet exposé, appelé "En Bref !", a pour sujet (au choix de l'élève) :
+Cet exposé, appelé __"En Bref !"__, a pour sujet (au choix de l'élève) :
 
 - un point particulier à détailler, sur le dernier thème abordé
 - une actualité
@@ -89,9 +98,17 @@ Voici une progression possible :
 |||
 |P|NSI_P2_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
 |P|NSI_P2C_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
+|||
+|4|NSI_4_1_Algorithmique_et_Pseudo_code|
 
 ## Licence
 
-Les documents déposés ici sont placés sous [licence CC BY-NC-SA 3.0 FR](https://creativecommons.org/licenses/by-nc-sa/3.0/fr/).
+Les documents déposés ici sont placés sous __[licence CC BY-NC-SA 3.0 FR](https://creativecommons.org/licenses/by-nc-sa/3.0/fr/)__.
+
+__Ces documents ont été le plus souvent construits à partir de travaux de collègues ayant eu la bonne idée de placer leur travail sous une licence permettant le partage à certaines conditions__.
+
+A la fin de chacun de mes documents, je source les auteurs des documents qui m'ont permis de faire ces cours.
+
+__J'en profite pour remercier chaleureusement tous les collègues partageant leur travail d'une façon ou d'une autre__.
 
 David Landry
