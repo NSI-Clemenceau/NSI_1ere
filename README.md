@@ -77,6 +77,7 @@ Voici une progression possible :
 |2|NSI_2_3A_Au_coeur_des_variables_et_affectations|
 |2|NSI_2_4_Tests_conditions_et_booléens|
 |2|NSI_2_4E_Tests_conditions_et_booléens|
+|2|NSI_2_4C_Tests_conditions_et_booléens|
 |2|NSI_2_5A_Tests_et_exceptions|
 |2|NSI_2_6_Boucle_bornée_Pour|
 |2|NSI_2_7_Boucle_non_bornée_Tant_que|
