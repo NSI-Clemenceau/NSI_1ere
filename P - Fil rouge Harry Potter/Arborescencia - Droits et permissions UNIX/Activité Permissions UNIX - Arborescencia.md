@@ -24,8 +24,8 @@ Pour cela, on peut utiliser le fichier `Initialisation.sh`, qui permet un déplo
 
 Pour utiliser ce fichier, il faut :
 
-- Disposer d'une distribution Linux avec `adumbledore` comme super-utilisateur (voir mot de passe dans `codes Poudlard.md`)
-- Créer un dossier /home/NSI en `chmod 775` (`chown adumbledore:poudlard`)
+- Disposer d'une distribution Linux avec `dumbledore` comme super-utilisateur (voir mot de passe dans `codes Poudlard.md`)
+- Créer un dossier /home/NSI en `chmod 775` (`chown dumbledore:poudlard`)
 - Copier `Initialisation.sh`, `Validation.sh` et dossier `Serres` dans NSI
 - `sudo sh Initialisation.sh`
 - Saisir les pwd utilisateur tels qu'ils sont notés dans `codes Poudlard.md`
