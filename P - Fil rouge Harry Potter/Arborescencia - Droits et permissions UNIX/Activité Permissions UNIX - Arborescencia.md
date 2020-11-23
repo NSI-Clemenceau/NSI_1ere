@@ -18,7 +18,7 @@ Thème "Système" : gestion des droits et permissions d'accès aux fichiers
 
 ### Conditions techniques
 
-Accès à un terminal Linux, sur une machine (ou VM) disposant déjà d'une arborescence construite par l'enseignant, avec les droits d'accès prédéfinis. 
+Accès à un terminal Linux, sur une machine (ou VM) disposant déjà d'une arborescence construite par l'enseignant, avec les droits d'accès prédéfinis.
 
 Pour cela, on peut utiliser le fichier `Initialisation.sh`, qui permet un déployement automatique de l'arborescence et des droits associés.
 
@@ -37,17 +37,17 @@ On peut simplement utiliser la copie de VM VirtualBox déjà préparée par quel
 ### Résumé de la séance
 
 - Fil rouge *Harry Potter* : une suite d'actions doit permettre à un apprenti sorcier de récupérer les ingrédients d'une potion nommée *Arborescencia* (étape 1), puis de préparer cette potion (étape 2).
-- Activité basée sur un principe de *jeu de piste* : un indice initial (lisible dans le fichier racine `README.txt`) doit amener à trouver l'indice suivant, etc.
+- Activité basée sur un principe de *jeu de piste* : un indice initial (lisible dans le fichier racine `README.md`) doit amener à trouver l'indice suivant, etc.
 - 2 étapes essentielles :
     1. une navigation dans une arborescence déjà construite
     2. une création d'arborescence avec les droits et permissions adéquates
 - 1ère étape : chaque fichier trouvé comprend à la fois une *clé*, qui sera nécessaire pour valider l'étape 2, mais aussi l'indice conduisant aux fichiers suivants
 - Pour trouver ces différents fichiers, il faudra donc :
 
-    - réinvestir les connaissances acquises sur la navigation dans une arborescence, la lecture de fichiers,...
-    - modifier des permissions pour avoir accès à certains dossiers / fichiers.
-    - les nouvelles commandes nécessaires à ces modifications de permissions seront données dans les indices (fichiers `INGREDIENT.txt`). A réfléchir s'il est pertinent de les donner immédiatement dans le memo ?
-- la seconde étape consiste à créer une arborescence comprenant des dossiers (noms des lieux) et des fichiers (noms des ingrédients trouvés dans chaque lieu) ayant des permissions bien précises (déterminées par les clés de chaque ingrédient trouvé à l'étape 1). 
+  - réinvestir les connaissances acquises sur la navigation dans une arborescence, la lecture de fichiers,...
+  - modifier des permissions pour avoir accès à certains dossiers / fichiers.
+  - les nouvelles commandes nécessaires à ces modifications de permissions seront données dans la feuille d'activité et rappelées dans les indices (fichiers `INGREDIENT.txt`).
+- la seconde étape consiste à créer une arborescence comprenant des dossiers (noms des lieux) et des fichiers (noms des ingrédients trouvés dans chaque lieu) ayant des permissions bien précises (déterminées par les *clés* de chaque ingrédient trouvé à l'étape 1).
 - la seconde étape sera validée automatiquement par un script, nommé `Validation.sh`, conçu par l'enseignant, trouvé à la fin de l'étape 1.
 
 ### Remarques
