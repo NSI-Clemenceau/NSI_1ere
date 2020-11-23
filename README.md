@@ -105,6 +105,10 @@ Voici une progression possible :
 |4|NSI_4_2_Les_tris|
 |4|NSI_4_2C_Les_tris|
 |4|NSI_4_3A_Les_autres_tris|
+|4|NSI_4_4_Validité_et_terminaison_des_algorithmes|
+|4|NSI_4_5_Complexité_des_algorithmes|
+||... "saut temporel", à compléter plus tard...|
+|P|NSI_P5_Arborescencia_Droits_et_permissions_UNIX|
 
 ## Licence
 
