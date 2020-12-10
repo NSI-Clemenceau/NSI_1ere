@@ -110,6 +110,7 @@ Voici une progression possible :
 |4|NSI_4_4_Correction_des_algorithmes_Notion_d_invariant|
 |4|NSI_4_4C_Correction_des_algorithmes_Notion_d_invariant|
 |4|NSI_4_5_Terminaison_des_algorithmes_Notion_de_variant|
+|4|NSI_4_5C_Terminaison_des_algorithmes_Notion_de_variant|
 |4|NSI_4_6_Complexité_des_algorithmes|
 ||... "saut temporel", à compléter plus tard...|
 |P|NSI_P5_Arborescencia_Droits_et_permissions_UNIX|
