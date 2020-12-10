@@ -88,7 +88,9 @@ Voici une progression possible :
 |3|NSI_3_2_Type_construit_Les_Tableaux|
 |3|NSI_3_3_Type_construit_Les_Dictionnaires|
 |3|NSI_3_3E_Type_construit_Les_Dictionnaires|
+|3|NSI_3_3EC_Type_construit_Les_Dictionnaires|
 |3|NSI_3_4A_Type_construit_Les_Ensembles|
+|3|NSI_3_4AC_Type_construit_Les_Ensembles|
 |||
 |P|NSI_P1_Le_Choixpeau_magique_Du_CSV_aux_Tables|
 |P|NSI_P1C_Le_Choixpeau_magique_Du_CSV_aux_Tables|
