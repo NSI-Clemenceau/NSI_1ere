@@ -107,6 +107,9 @@ Voici une progression possible :
 |4|NSI_4_2_Les_tris|
 |4|NSI_4_2C_Les_tris|
 |4|NSI_4_3A_Les_autres_tris|
+|||
+|P|NSI_P3_Harry_se_fait_la_malle (Voir dossier Projets)|
+|||
 |4|NSI_4_4_Correction_des_algorithmes_Notion_d_invariant|
 |4|NSI_4_4C_Correction_des_algorithmes_Notion_d_invariant|
 |4|NSI_4_5_Terminaison_des_algorithmes_Notion_de_variant|
