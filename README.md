@@ -96,8 +96,9 @@ Voici une progression possible :
 |P|NSI_P1C_Le_Choixpeau_magique_Du_CSV_aux_Tables|
 |||
 |2|NSI_2_9_Les_Fonctions|
-|2|NSI_2_9E_Les_Fonctions|
 |2|NSI_2_9C_Les_Fonctions|
+|2|NSI_2_9E_Les_Fonctions|
+|2|NSI_2_9EC_Les_Fonctions|
 |2|NSI_2_10A_Les_Fonctions_avancees|
 |||
 |P|NSI_P2_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
@@ -115,6 +116,9 @@ Voici une progression possible :
 |4|NSI_4_5_Terminaison_des_algorithmes_Notion_de_variant|
 |4|NSI_4_5C_Terminaison_des_algorithmes_Notion_de_variant|
 |4|NSI_4_6_Complexité_des_algorithmes|
+|4|NSI_4_6C_Complexité_des_algorithmes|
+|4|NSI_4_7A_Complexité_des_algorithmes_etudes_experimentales|
+|4|NSI_4_7AC_Complexité_des_algorithmes_etudes_experimentales|
 ||... "saut temporel", à compléter plus tard...|
 |P|NSI_P5_Arborescencia_Droits_et_permissions_UNIX|
 
