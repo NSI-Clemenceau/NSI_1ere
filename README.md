@@ -113,7 +113,8 @@ Voici une progression possible :
 |||
 |5|NSI_5_1_Tables_et_Fichier_CSV_Open_data|
 |5|NSI_5_1C_Tables_et_Fichier_CSV_Open_data|
-|5|NSI_5_2_Indexage_de_Table|
+|5|NSI_5_2_Indexation_de_Table|
+|5|NSI_5_2C_Indexation_de_Table|
 |5|NSI_5_3_Fusion_de_Table|
 |||
 |P|NSI_P3_Harry_se_fait_la_malle (Voir dossier Projets, 2nde partie)|
