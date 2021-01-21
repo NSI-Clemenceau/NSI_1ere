@@ -25,7 +25,7 @@ Framagit ne permet pas d'utiliser, ni même de pleinement visualiser nativement 
 Pour profiter pleinement des notebooks, deux options semblent intéressantes :
 
 - __cloner ce dépôt__, puis en profiter en local.
-- utiliser ce lien __Binder__ pour une utilisation "en ligne" [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fframagit.org%2Fdlandry%2Fnsi/master)
+- utiliser ce lien __Binder__ pour une utilisation "en ligne" [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fframagit.org%2Fdlandry%2Fnsi/master) (mais il faut être patient, l'initialisation est très longue...)
 
 ## Méthodologie pédagogique
 
