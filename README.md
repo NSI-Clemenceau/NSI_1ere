@@ -55,6 +55,12 @@ L'évaluation tient compte du fond et de la forme.
 
 La progression ne suit pas la numérotation de chapitres.
 
+Pour vous situer dans la progression, cherchez les émojis !
+
+- 🚜 Vous êtes un peu en retard, il est temps de mettre les bouchées doubles !
+- 🏎 Vous êtes dans le rythme, ne changez rien.
+- 🚀 Vous êtes plutôt en avance donc profitez-en pour approfondir votre sujet. Soit en refaisant / relisant d'anciens notebooks mals compris, soit en étoffant votre projet ou encore en préparant un "En bref !" de grande qualité.
+
 Voici une progression possible :
 
 | Numéro de chapitre | Nom du fichier |  
@@ -121,16 +127,18 @@ Voici une progression possible :
 |5|NSI_5_3_Fusion_de_Tables|
 |||
 |P|NSI_P4_Le_Choixpeau_magique_Fusion_de_tables|
-|P|NSI_P4C_Le_Choixpeau_magique_Fusion_de_tables|
+|P🚜|NSI_P4C_Le_Choixpeau_magique_Fusion_de_tables|
 |||
 |4|NSI_4_4_Correction_des_algorithmes_Notion_d_invariant|
 |4|NSI_4_4C_Correction_des_algorithmes_Notion_d_invariant|
-|4|NSI_4_5_Terminaison_des_algorithmes_Notion_de_variant|
+|4🏎|NSI_4_5_Terminaison_des_algorithmes_Notion_de_variant|
 |4|NSI_4_5C_Terminaison_des_algorithmes_Notion_de_variant|
 |4|NSI_4_6_Complexité_des_algorithmes|
-|4|NSI_4_6C_Complexité_des_algorithmes|
+|4🚀|NSI_4_6C_Complexité_des_algorithmes|
 |4|NSI_4_7A_Complexité_des_algorithmes_etudes_experimentales|
 |4|NSI_4_7AC_Complexité_des_algorithmes_etudes_experimentales|
+|4|NSI_4_8_Algorithmes_gloutons|
+|4|NSI_4_8C_Algorithmes_gloutons|
 ||... "saut temporel", à compléter plus tard...|
 |P|NSI_P5_Arborescencia_Droits_et_permissions_UNIX|
 
