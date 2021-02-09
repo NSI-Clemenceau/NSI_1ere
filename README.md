@@ -129,11 +129,11 @@ Voici une progression possible :
 |P|NSI_P4_Le_Choixpeau_magique_Fusion_de_tables|
 |P|NSI_P4C_Le_Choixpeau_magique_Fusion_de_tables|
 |||
-|🚜4|NSI_4_4_Correction_des_algorithmes_Notion_d_invariant|
+|4|NSI_4_4_Correction_des_algorithmes_Notion_d_invariant|
 |4|NSI_4_4C_Correction_des_algorithmes_Notion_d_invariant|
-|4|NSI_4_5_Terminaison_des_algorithmes_Notion_de_variant|
-|🏎4|NSI_4_5C_Terminaison_des_algorithmes_Notion_de_variant|
-|4|NSI_4_6_Complexité_des_algorithmes|
+|🚜4|NSI_4_5_Terminaison_des_algorithmes_Notion_de_variant|
+|4|NSI_4_5C_Terminaison_des_algorithmes_Notion_de_variant|
+|🏎4|NSI_4_6_Complexité_des_algorithmes|
 |4|NSI_4_6C_Complexité_des_algorithmes|
 |4|NSI_4_7A_Complexité_des_algorithmes_etudes_experimentales|
 |🚀4|NSI_4_7AC_Complexité_des_algorithmes_etudes_experimentales|
@@ -141,6 +141,10 @@ Voici une progression possible :
 |4|NSI_4_8C_Recherche_dichotomique|
 |4|NSI_4_9_Algorithmes_gloutons|
 |4|NSI_4_9C_Algorithmes_gloutons|
+|4|NSI_4_10A_Optimisation_par_force_brute|
+|4|NSI_4_10AC_Optimisation_par_force_brute|
+|4|NSI_4_11_Algorithme_des_k_plus_proches_voisins|
+|4|NSI_4_11C_Algorithme_des_k_plus_proches_voisins|
 ||... "saut temporel", à compléter plus tard...|
 |P|NSI_P5_Arborescencia_Droits_et_permissions_UNIX|
 
