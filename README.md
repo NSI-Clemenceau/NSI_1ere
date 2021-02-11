@@ -144,7 +144,8 @@ Voici une progression possible :
 |4|NSI_4_10A_Optimisation_par_force_brute|
 |4|NSI_4_10AC_Optimisation_par_force_brute|
 |4|NSI_4_11_Algorithme_des_k_plus_proches_voisins|
-|4|NSI_4_11C_Algorithme_des_k_plus_proches_voisins|
+|4|NSI_4_12A_Algorithme_des_k_plus_proches_voisins|
+|4|NSI_4_12AC_Algorithme_des_k_plus_proches_voisins|
 ||... "saut temporel", à compléter plus tard...|
 |P|NSI_P5_Arborescencia_Droits_et_permissions_UNIX|
 
