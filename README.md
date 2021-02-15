@@ -16,7 +16,7 @@ Ces notebooks peuvent être :
 
 Ils sont déposés au fur et à mesure de leur élaboration depuis la rentrée 2020 et sont mis à jour au besoin.
 
-Les sujet d'évaluation, à part les projets, ne sont pas mis en ligne.
+Les sujets d'évaluation, à part les projets, ne sont pas mis en ligne.
 
 ## Visualisation / modification et exécution des notebooks
 
@@ -148,8 +148,11 @@ Voici une progression possible :
 |4|NSI_4_12EC_Exercices_sur_Algorithme_des_kPPV|
 |4|NSI_4_13A_Algorithme_des_k_plus_proches_voisins|
 |4|NSI_4_13AC_Algorithme_des_k_plus_proches_voisins|
+|||
+|P|NSI_P5_Le_Choixpeau_magique (Voir dossier Projets, 1ère partie uniquement)|
+|||
 ||... "saut temporel", à compléter plus tard...|
-|P|NSI_P5_Arborescencia_Droits_et_permissions_UNIX|
+|P|NSI_P6_Arborescencia_Droits_et_permissions_UNIX|
 
 ## Licence
 
