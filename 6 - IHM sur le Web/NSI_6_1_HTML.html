@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>NSI_6_1_HTML_CSS</title>
+
+    <style>
+     
+      body {
+        font-family: 'Noto Sans TC', sans-serif;
+      }
+
+      h1 { 
+        color: #1BB2E0;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Le HTML pour publier du contenu sur le Web</h1>
+    </header>
+
+    <section>
+      <h2>1. Un document en HTML pour mieux connaître le HTML</h2>
+      <p>
+        Pour une fois, le cours n'a pas un notebook pour support car nous n'utiliseraons pas Python. 
+        Considérons que ce cours a pour objet les langages HTML et CSS, autant se lancer immédiatement.
+      </p>
+      <p>
+        Pour suivre ce cours / activité, vous devez suivre les consignes suivantes :
+      </p>
+      <ul>
+        <li> Copier ce fichier NSI_6_1_HTML.html dans un dossier de vos documents</li>
+        <li> Ouvrir ce dossier à partir du logiciel Visual Studio Code (Fichier / Ouvrir le dossier)</li>
+        <li> Cliquer sur le fichier NSI_6_1_HTML.html pour le visualiser dans VSC</li>
+        <li> Cliquer sur "Live server" en bas à droite de la barre bleue, tout en bas</li>
+      </ul> 
+      <p>
+        A partir de maintenant, vous avez à votre disposition le code HTML / CSS de ce cours 
+        et sa visualisation en direct dans le navigateur par défaut : tout effet d'une modification faite 
+        dans VSC sur le code sera visible en direct dans la navigateur, après sauvegarde (Crt + S). 
+        On teste ? Oui, alors effacez-moi cette phrase dans VSC puis saisissez Ctr+S. Si tout s'est 
+        bien passé, la phrase a disparu dans votre navigateur. 
+      </p>
+      <P>
+        Ainsi, toute modification de code sera visible immédiatement dans votre navigateur. 
+        Si vous le souhaitez, vous pouvez caler les fenêtres des deux logiciels (VSC et navigateur) 
+        à gauche et à droite de votre écran pour avoir une vision globale de votre travail.
+      </P>
+      <p>
+        Dans un premier temps, si vous ne connaissez pas le HTML / CSS, l'idée est de regarder 
+        attentivement le code et de noter ce que vous en comprenez, sa structure en particulier.
+      </p>
+      <p>
+        La suite de l'activité consistera à compléter le contenu du cours à partir d'un autre site. 
+        Pour vous y aider, vous avez à votre disposition...
+      </p>
+      <ol>
+        <li> Le site web <a href=http://www.monlyceenumerique.fr/nsi_premiere/ihm_w/w1_html_mini_projet.html>
+          Mon lycée numérique</a>, qui détaille ce qu'il faut savoir en classe de première.</li>
+        <li> Le document PDF Memo1, qui est un résumé de cours sur le HTML / CSS</li>
+        <li> Le document PDF Memo2, qui est mémo, concentrant les balises essentielles à connaître</li>
+        <li> Une image PNG résumant la mise en page par défaut des principales balises HTML.</li>
+      </ol> 
+      <p>Suivant vos connaissances plus ou moins approfondies du HTML / CSS, <strong>lire un ou plusieurs 
+        des documents énumérés ci-dessus</strong>. Le 1er est conseillé pour les débutants, alors que le dernier 
+        permettra à ceux qui sont déjà à l'aise, de se rafraîchir la mémoire. Ce premier document  
+        se concentrant sur le langage HTML, vous pouvez survoler ce qui concerne le langage CSS car 
+        nous y viendrons au prochain cours.
+      </p>
+      <p>
+        On commence...
+      </p>
+      <p>2. Le HTML, pour coder le contenu de la page</p>
+      <p>
+        La phrase précédente est en fait destinée à être un titre. Modifier le code HTML 
+        afin de faire en sorte qu'elle soit effectivement un titre de niveau 2, et non pas 
+        un simple paragraphe. Une fois terminé, effacer ce paragraphe de consigne, 
+        devenu inutile. 
+      </p>
+      <p>
+        <strong>Remarque : </strong>Dans l'ensemble de ce document, ne pas hésiter à effacer du texte si 
+        vous considérez qu'il ne vous sera pas utile pour réviser.
+      </p>
+      <h3>a. HTML : Définition</h3>
+      <p>
+        <i>L'HTML est un langage informatique utilisé sur l'internet. Ce langage est utilisé pour créer des pages
+            web. L'acronyme
+            signifie HyperText Markup Language, ce qui signifie en français "langage de balisage d'hypertexte".
+            Cette
+            signification porte bien son nom puisqu'effectivement ce langage permet de réaliser de l'hypertexte à
+            base
+            d'une structure de balisage.</i>
+    </p>
+    <p>
+        Pour l'instant, nous allons retenir deux éléments de cette définition «conçu pour représenter les pages web»
+        et «un langage de balisage».
+    </p>
+    <p>
+        Grâce au HTML vous allez pouvoir, dans votre navigateur (Firefox, Chrome, Opera,....), afficher du texte,
+        afficher des images, proposer des hyperliens (liens vers d'autres pages web), afficher des formulaires et
+        même maintenant afficher des vidéos (grâce
+        à la dernière version du HTML, l'HTML5).
+    </p>
+    <p>
+        HTML n'est pas un langage de programmation (comme Python par exemple), ici, pas question de conditions, de
+        boucles....c'est un langage de description.
+    </p>
+    <p>
+        En fait le HTML, permet de remplir un page web ou chaque élément est contenu dans une balise ( dans une
+        capsule). Chacune des balises ayant des propriétés que l'on peut personnaliser à volonté.
+    </p>
+    <h3>b. Activité en HTML</h3>
+    <p>
+      A ce stade, vous avez peut-être remarqué que le chapitre précédent est un simple 
+      copier / coller du site web 
+      <a href=http://www.monlyceenumerique.fr/nsi_premiere/ihm_w/w1_html_mini_projet.html>
+        Mon lycée numérique</a>. 
+    </p>
+    <p>
+      En effet, le contenu de ce site est intéressant et il est placé sous une licence de partage
+      <a href=http://creativecommons.org/licenses/by-nc-sa/3.0/fr/>CC BY-NC-SA</a>, 
+      ce qui autorise sa copie et son utilisation non commerciale. 
+      De plus l'accès au code source des pages web est facile : 
+    </p>
+    <ul>
+      <li> En ouvrant les outils de développeur du navigateur (ex: Crt+Maj+I sous Brave)</li>
+      <li> En affichant le code source de façon brute (ex: Crt+U sous Brave)</li>
+      <li> Dans les deux cas précédents et pour de nombreux nagigateurs, 
+        un clic doit sur la page permet souvent d'accéder à ces options</li>
+    </ul> 
+    <p>
+      Cette activité consiste à lire <a href=http://www.monlyceenumerique.fr/nsi_premiere/ihm_w/w1_html_mini_projet.html>
+        la page web déjà citée</a> et d'en recopier l'essentiel dans 
+      votre page web ici présente. 
+    </p>
+    <p>Voici le détail des consignes :</p>
+    <ul>
+      <li> Dans un premier temps, ne vous attardez pas à la mise en forme mais...</li>
+      <ul>
+        <li> Il faut tout de même respecter l'usage des balises (ex : balises de titres)</li>
+        <li> Il faut organiser correctement votre code HTML (indentation, 
+          pas de lignes trop longues, pas trop de sauts de lignes inutiles,...)</li>
+        <li> Il faut bien évidemment renuméroter vos chapitres</li>
+      </ul>
+      <li> Ne conservez pas tous les chapitres mais uniquement ce qui vous intéresse. 
+        Par exemple, je ne pense pas utile de reprendre ces points :</li>
+      <ul>
+        <li> Les références à jsfiddle.net</li>
+        <li> Les ancres, les vidéos, les téléchargements.</li>
+        <li> Par ailleurs, le positionnement d'images (Chap. 6.2) ne me semble pas correct.</li>
+        <li> Ne pas reprendre non plus le chapitre 9 décrivant leur projet de classe.</li>
+      </ul>
+      <li> Lorsque vous aurez fini, vous pourrez effacer ces consignes pour alléger votre page.</li>
+    </ul> 
+    <h2>3. Pour aller un peu plus loin...</h2>
+    <p>
+      Si vous avez l'habitude d'être en avance sur la progression de classe, je vous invite à :
+    </p>
+    <ul>
+      <li> Ajouter du contenu à ce document en cherchant des informations ailleurs 
+        (autres sites web, mémos HTML placés dans vos ressources pédagogiques,...).
+      </li>
+      <li> Organiser ce contenu plus riche sur plusieurs pages, avec liens hypertextes 
+        pour les relier entre elles. Dans ce cas, une page d'accueil de menu peut être utile.
+      </li>
+    </ul>
+    </section>
+    <footer>
+      <HR>
+      <a href=http://creativecommons.org/licenses/by-nc-sa/3.0/fr/>
+        <img src=https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png 
+          alt="Licence Creative Commons CC BY-NC-SA">
+      </a>
+      <p style="text-align: center;">Auteur : David Landry, Lycée Clemenceau - Nantes</p>
+      <p style="text-align: center;">D'après des documents partagés par...</p>
+      <p style="text-align: center;"><a  href=http://www.monlyceenumerique.fr/index_nsi.html#premiere>
+        JC. Gérard, T. Lourdet, J. Monteillet, P. Thérèse, sur le site monlyceenumerique.fr</a></p>
+    </footer>
+  </body>
+</html>
