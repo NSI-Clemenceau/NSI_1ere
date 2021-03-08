@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>NSI_6_3_IHM_Web_Brython</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.9.0/brython.min.js"></script>
+    <style>
+      body {
+        font-family: 'Noto Sans TC', sans-serif;
+      }
+      h1 { 
+        color: #1BB2E0;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      table, th, td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body onload="brython()">
+
+    <script type="text/python">
+      from browser import document, html
+      
+      document <= html.B("Hello World ! ")
+
+      def change_texte1(ev):
+        document["texte_ephemere"].textContent = "Eh bien voilà, le texte a changé !"
+      document["bouton1"].bind("click", change_texte1)
+
+      def change_texte2(ev):
+
+        document["texte_ephemere"].textContent = f"La valeur du bouton 2 est {ev.target.value}"
+      document["bouton2"].bind("click", change_texte2)
+
+      i = 0
+      def compte(ev):
+        global i
+        i += 1
+        document["bouton_compteur"].textContent = str(i)
+      document["bouton_compteur"].bind("click", compte)
+      
+    </script>
+
+    <header>
+      <h1>Comment rendre une page web interactive ?</h1>
+    </header>
+
+    <section>
+      <h2>1. Analyse du code source d'une page web interactive</h2>
+      <p>
+        On l'a vu...
+      </p>
+      <ul>
+        <li>Le langage HTML permet d'jouter du contenu (texte, image,...) à une page web.</li>
+        <li>Le langage CSS permet de mettre en forme ce contenu (police, couleurs, mise en page,...).</li>
+      </ul> 
+      <p>Pour rendre interactive une page (clics, formulaires, contenu différencié,...),
+        il faut introduire de nouveaux langages.
+      </p>
+      <p>Les plus classiques sont...</p>
+      <ol>
+        <li>Javascript.</li>
+        <li>PHP.</li>
+      </ol>
+      <p>Toutefois, comme nous gardons l'objectif de finaliser le mini-projet du Choixpeau magique, 
+        en l'intégrant dans une page interactive, et que ce projet a été codé en Python, 
+        nous avons besoin d'une alternative moins connue, mais toutefois efficace : le langage Brython.
+      </p>
+      <p>La première exigence du programme consiste à "examiner" le code source d'une page Web et d'y 
+        distinguer ce qui relève :</p>
+      <ul>
+        <li>du contenu brut de la page (texte, images,...), géré par le HTML.</li>
+        <li>de la mise en forme de ce contenu par le CSS.</li>
+        <li>des événements associés aux différents composants graphiques (clic, survol de souris,...).</li>
+      </ul> 
+      <p>La première activité constite à analyser grossièrement le code source de la page Web 
+        du <a href=https://gclemenceau.paysdelaloire.e-lyco.fr/>site du Lycée Clemenceau</a>.
+      </p>
+      <p>Afficher son code source dans le navigateur puis compléter le tableau suivant :</p>
+      <table>
+        <tr>
+          <th>Lignes</th>
+          <th>Objectif</th>
+          <th>Langage</th>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Déclare l'encodage utilisé</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td>108</td>
+          <td>Insère du contenu : un titre de 1er niveau</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td>83</td>
+          <td>Apporte de l'interactivité par du code Javascript</td>
+          <td>Javascript</td>
+        </tr>
+        <tr>
+          <td>42-65</td>
+          <td>Décrit une mise en forme</td>
+          <td>CSS</td>
+        </tr>
+        <tr>
+          <td>151-156</td>
+          <td>Crée une liste de textes à puces, avec un lien hypertexte</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td>347</td>
+          <td>Insère un paragraphe avec un lien hypertexte</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td>277</td>
+          <td>Insère une image</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td>712-723</td>
+          <td>Apporte de l'interactivité par du code Javascript</td>
+          <td>Javascript</td>
+        </tr>
+      </table>
+      <p><strong>Remarque : </strong>En cas d'évolution de la page web du lycée, se référer au 
+        fichier de sauvegarde "view-source_https___gclemenceau.paysdelaloire.e-lyco.fr.html"</p>
+      <p>Je vous invite à faire de même à partir du code source de la page Web 
+        du <a href=https://www.brython.info/static_doc/fr/mouse_events.html/>langage Brython</a>.
+      </p>
+      <p>Afficher son code source dans le navigateur puis compléter le tableau suivant :</p>
+      <table>
+        <tr>
+          <th>Lignes</th>
+          <th>Objectif</th>
+          <th>Langage</th>
+        </tr>
+        <tr>
+          <td>180</td>
+          <td>Insère du texte dans une cellule de tableau</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td>14-81</td>
+          <td>Apporte de l'interactivité par du code Brython</td>
+          <td>Brython</td>
+        </tr>
+        <tr>
+          <td>154</td>
+          <td>Gère l'espacement du texte avec l'encadrement du bloc</td>
+          <td>CSS</td>
+        </tr>
+        <tr>
+          <td>257-268</td>
+          <td>Insère du texte, mis en forme par CSS, pour ressembler à un éditeur de code</td>
+          <td>HTML</td>
+        </tr>
+      </table>
+      <h2>2. Ajouter des éléments dans la page à l'aide de Brython</h2>
+      <ol>
+        <li>Etudier le début du <a href=https://www.brython.info/static_tutorial/fr/index.html>
+          tuto Brython</a> afin de :</li>
+        <ul>
+          <li>Repérer les lignes indispensables à ajouter à notre fichier html, 
+            afin de rendre Brython opérationnel.</li>
+          <li>Repérer la syntaxe permettant d'afficher un simple texte sur notre page.</li>
+        </ul> 
+        <li>Mettre en oeuvre cette intégration de Brython et afficher un petit texte, 
+            comme "Hello World !" par exemple.</li>
+        <li>Observer le résultat, puis noter vos remarques dans ce document de cours.</li>
+      </ol>
+      <p><strong>Remarques : </strong></p>
+      <ul>
+        <li>il n'est pas indispensable de lire le chapitre "Calculatrice"</li>
+        <li>comme on l'a vu, le script Brython s'exécute APRES l'affichage de la page HTML. 
+          Cela complique un peu l'organisation du contenu de la page. C'est pourquoi, 
+        je vous conseille de :</li>
+        <ul>
+          <li>Soit créer / modifier l'ensemble de votre contenu par Brython.</li>
+          <li>Soit créer votre contenu en HTML, puis le modifier au besoin 
+            avec Brython. Il me semble que cette deuxième solution est plus simple.
+          </li>
+        </ul>
+      </ul>
+      <h2>3. Interagir avec la page web grâce à Brython</h2>
+      <p>De nombreuses interactions sont envisageables avec Brython mais nous nous 
+        limiterons à celle essentielle pour notre mini-projet : la gestion du clic 
+        de souris pour modifier du contenu.</p>
+      <p>Voici donc plusieurs boutons :</p>
+      <button name="button">Bouton minimal</button>
+      <button name="button" id="bouton1">Bouton identifiable</button>
+      <button name="button" id="bouton2" value=5>Bouton identifiable avec valeur</button>
+      <p><strong>Remarques : </strong></p>
+      <ul>
+        <li>on a ajouté un attribut <EM>id</EM> aux deux derniers boutons pour les rendre identifiables.</li>
+        <li>ainsi, le sélecteur CSS <EM>#bouton1</EM> permettra de les sélectionner.</li>
+      </ul>
+      <p>A ce stade, ces boutons sont peu utiles. A vous de rendre certains boutons  
+        interactifs en vous inspirant de <a href=https://www.brython.info/demo.html?lang=fr#>
+          la démo "change the text of an element"</a> (cliquer sur le menu gauche).</p>
+      <p>L'objectif est de créer un paragraphe ci-dessous, en lui ajoutant un attribut 
+        <EM>id="texte_ephemere"</EM> 
+        pour l'identifier. Noter un texte minimaliste dans ce paragraphe puis faire en sorte 
+        que le clic sur le bouton1 modifie le contenu de ce paragraphe (changement de texte).</p>
+      <p id="texte_ephemere">Au moindre clic, je disparais !</p>
+      <p>Maintenant, il faut utiliser la "valeur" du bouton2 pour afficher un texte lié à
+         cette "valeur" : au clic sur le bouton2, le paragraphe précédent (texte_ephemere) 
+         doit afficher "La valeur du bouton 2 est 5", puisque 5 est la valeur récupérée dans 
+         l'attribut <EM>value</EM> du bouton2.</p>
+      <p><strong>Remarque (aide) : </strong>l'attribut <EM>target</EM>, appliqué à l'évenement 
+        <EM>ev</EM> permet d'accéder au bouton cliqué. Pour atteindre la valeur de son attribut 
+        <EM>value</EM>, il suffit donc de saisir <EM>ev.target.value</EM></p>
+      <p><strong>Approfondissement : </strong>
+        créer un compteur qui affiche et incrémente une valeur de 1 à chaque clic.</p>
+      <button name="button" id="bouton_compteur">Compteur</button>
+    </section>
+    <footer>
+      <HR>
+      <a href=http://creativecommons.org/licenses/by-nc-sa/3.0/fr/>
+        <img src=https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png 
+          alt="Licence Creative Commons CC BY-NC-SA">
+      </a>
+      <p style="text-align: center;">Auteur : David Landry, Lycée Clemenceau - Nantes</p>
+    </footer>
+  </body>
+</html>
