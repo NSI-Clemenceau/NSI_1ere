@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>NSI_6_3_IHM_Web_Javascript</title>
+    <style>
+      body {
+        font-family: 'Noto Sans TC', sans-serif;
+      }
+      h1 { 
+        color: #1BB2E0;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      table, th, td {
+        border: 1px solid black;
+      }
+      .gras {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body onClick="incremente()">
+    <script>
+    /* Exo 5 du site Mon Lycée Numérique */
+    let maVar2 = "j'ai changé de valeur !"
+    let maVar3
+    console.log(maVar2);
+    {
+        maVar3 ="je suis nouvelle";
+        maVar2=" je suis modifiée dans le bloc";
+        console.log(maVar3);
+        console.log(maVar2);
+    }
+    console.log(maVar2);
+    console.log(maVar3);
+
+    /* Exo 9 */
+    let x=1, y=2, z=3;
+    alert(x**2 + 3*y*z);
+
+    /* Exo 10 */
+    function f(x){
+        return(x**2 - 3*x + 1);
+    }
+    document.write("f(1) = ", f(1), " et f(-1) = ", f(-1));
+    document.write("<table><tr>");
+    for (i=0; i<=5; i++){
+      document.write("<th>f(", i, ") = ",f(i), "</th>");
+     } 
+    document.write("</tr></table>");
+
+    /* Exo 11 */
+    function carre(i){
+    return(i*i)
+    }
+    function demande(){
+      x = prompt("Saisir un nombre, il sera mis au carré","Répondre ici")
+          return x
+      }
+    document.write("Nombre saisi, mis au carré : ", carre(demande()));
+
+    /* Exos 12 à 14*/
+    onEvenement="Action_Javascript_ou_Fonction();"
+
+    function text_rouge(){
+      document.querySelector("#r").style.color="red"
+    }
+    function text_rouge_class(){
+      document.querySelector(".rouge").style.color="red"
+    }
+    /* Exo 16*/
+    function quit() {
+        if (confirm("Tu veux vraiment partir? :'("))
+        {
+          alert("à bientôt !");
+          close();
+        }
+      }
+
+    /* Exo 17 (Remarque, il faut également aller voir la balise ouvrante body */
+    let compteur = 0;
+    function incremente() {
+      compteur = compteur + 1;
+      console.log(compteur);
+      let text = "Il y a eu " + compteur + " clics effectués sur l'ensemble de la page !";
+      document.getElementById("nbClics").innerHTML = text;
+    }
+
+    </script>
+
+    <!-- Suite Exos 12 à 14 -->
+    <!-- A noter que les lignes suivantes ne font plus partie de la balise script de JS -->
+    <p onClick="alert('METTRE DE LA COULEUR');">Cliquez ici</p>
+    <p id="r" onclick="text_rouge()">Je veux du rouge !</p>
+    <p class="rouge" onclick="text_rouge_class()">Je suis le 1er élément de classe rouge !</p>
+    <p class="rouge" onclick="text_rouge_class()">Je suis le 2ème élément de classe rouge !</p>
+
+    <!-- Suite Exo 16 -->
+    <button onclick="quit()">Tester le bouton</button>
+
+    <!-- Suite Exo 17 -->
+    <p id="nbClics">Il y a eu 0 clics effectués sur l'ensemble de la page</p>
+    <!-- Fin Exos JS -->
+
+
+    <header>
+      <h1>Comment rendre une page web interactive avec Javascript ?</h1>
+    </header>
+
+    <section>
+      <h2>1. Construire un cours interactif</h2>
+      <p>Cette fois encore, vous devrez construire votre cours à partir du 
+        <a href=http://www.monlyceenumerique.fr/nsi_premiere/ihm_w/w3_java_script.php>
+        site web Mon Lycée Numérique</a></p>
+      <p class="gras">Il vous faudra donc :</p>
+      <ul>
+        <li>Lire attentivement <a href=http://www.monlyceenumerique.fr/nsi_premiere/ihm_w/w3_java_script.php>
+          cette page</a>.</li>
+        <li>Afficher son code source (Crt+U) pour faciliter les "copier / coller" ultérieurs.</li>
+        <li>Copier / coller dans ce document HTML les éléments importants à retenir.</li>
+        <li>Faire des <a href=https://developer.mozilla.org/fr/docs/Web/JavaScript>
+          recherches complémentaires</a> au besoin pour compléter votre cours.</li>
+        <li>Faire les exercices proposés, directement sur ce document de cours HTML.</li>
+      </ul> 
+      <p class="gras">Ce qu'il n'est pas indispensable de faire :</p>
+      <ul>
+        <li>Télécharger et utiliser la "page web basique pour travailler".</li>
+        <li>Séparer le code Javascript dans un fichier séparé (même si c'est préférable en règle générale).</li>
+        <li>Noter l'instruction <EM>var</EM> (Chap. 3.3), puisqu'elle est maintenant obsolète.</li>
+        <li>Faire l'exercice 15.</li>
+        <li>Faire les activités du chapitre 7 (même si l'exercice 17 
+          peut être un bon exercice d'approfondissement).</li>
+      </ul> 
+    </section>
+    <footer>
+      <a href=http://creativecommons.org/licenses/by-nc-sa/3.0/fr/>
+        <img src=https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png 
+          alt="Licence Creative Commons CC BY-NC-SA"></a>
+      <p style="text-align: center;">Auteur : David Landry, Lycée Clemenceau - Nantes</p>
+      <p style="text-align: center;">D'après des documents partagés par...</p>
+      <p style="text-align: center;"><a  href=http://www.monlyceenumerique.fr/index_nsi.html#premiere>
+        JC. Gérard, T. Lourdet, J. Monteillet, P. Thérèse, sur le site monlyceenumerique.fr</a></p>
+    </footer>
+  </body>
+</html>
