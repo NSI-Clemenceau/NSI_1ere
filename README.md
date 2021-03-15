@@ -2,7 +2,7 @@
 
 ## Contenu du dépôt
 
-Ce dépôt compile les __cours de première, dispensés au Lycée Clemenceau à Nantes, en spécialité NSI__(Numérique et Sciences Informatiques).
+Ce dépôt compile les __cours de première, dispensés au Lycée Clemenceau à Nantes, en spécialité NSI__ (Numérique et Sciences Informatiques).
 
 Ces cours sont essentiellement composés de __notebooks__.
 
@@ -160,8 +160,7 @@ Voici une progression possible :
 |||
 |6|NSI_6_4_IHM_Web_Javascript|
 |6|NSI_6_4C_IHM_Web_Javascript|
-|6|NSI_6_5_Interaction_Client_Serveur|
-|6|NSI_6_6_IHM_Web_Formulaires|
+|6|NSI_6_5_Formulaires_et_Interaction_Client_Serveur|
 |||
 ||... "saut temporel", à compléter plus tard...|
 |P|NSI_P6_Arborescencia_Droits_et_permissions_UNIX|
