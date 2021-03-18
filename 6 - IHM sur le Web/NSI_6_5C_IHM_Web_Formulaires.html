@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>NSI_6_5C_IHM_Web_Formulaires</title>
+    <script src="formulaires.js"></script>
+    <style>
+      body {
+        font-family: 'Noto Sans TC', sans-serif;
+      }
+      h1 { 
+        color: #1BB2E0;
+      }
+      img, form {
+        padding-left: 50px;
+        padding-right: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      code {
+        padding: 2px 2px;
+        color: #267988;
+        background-color: #f9f2f4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Comment créer un formulaire et le rendre interactif ?</h1>
+    </header>
+
+    <section>
+      <p><b>Remarque préalable : </b>Ce cours doit être lu à la fois pour sa partie "code",
+         mais aussi pour son rendu dans un navigateur. Il est donc fortement conseillé d'utiliser le 
+         même dispositif de lecture que précédemment (VSCodium + Liver server).</p>
+
+      <h2>1. Un formulaire, pour quoi faire ? Un formulaire, comment faire ?</h2>
+
+      <p>Un formulaire web consiste à offrir la possibilité à un utilisateur de répondre 
+        à une ou plusieurs question(s), sous diverses formes (choix multiples, champ de texte,...).</p>
+      <h4>Nous allons découvrir les formulaires, en trois étapes :</h4>
+      <ol>
+        <li>Ecrire un formulaire en HTML.</li>
+        <li>Rendre ce formulaire interactif, en local, par un simple navigateur web, en ajoutant du 
+          code Javascript ou Brython.</li>
+        <li>Le prochain cours (NSI_6_6) étendra les possibilités d'interaction entre un client et un serveur. 
+          Cela permettra de gérer l'interactivité du formulaire par le serveur. Dans ce cas, les réponses 
+          au formulaire ne sont pas traitées par le navigateur (client) sur lequel est visible le formulaire. 
+          Un serveur (souvent distant) récupère ces réponses et les traite d'une façon ou d'une autre.</li>
+      </ol> 
+
+      <h2>2. Ecrire un formulaire en HTML</h2>
+      <h3>Les balises form et input</h3>
+
+      <p>Un formulaire HTML est indiqué par la balise <code>&ltform&gt</code> et contient notamment 
+        des champs de saisie limités par des balises <code>&ltinput&gt</code>.</p>
+      <p>Les attributs <code>value</code> seront des variables utilisées par JavaScript ou Brython.</p>
+      <h4>En voici quelques exemples ci-dessous :</h4>
+      <form>
+        <p>Login : <input type="text" name="login"/></p>
+        <p>Mot de passe : <input type="password" name="pass"/></p>
+        <p>Catégorie :
+          Humain <input type="radio" name="categorie" value="hu"/>
+          Extraterrestre <input type="radio" name="categorie" value="ex"/>
+        </p>
+        <p>Préférences pour le petit-déjeuner : 
+          Jus de fruit <input type="checkbox" name="jus" value="jus"/>
+          Tartines beure / confiture <input type="checkbox" name="beurre" value="beurre"/>
+          Tartines limaces / uranium<input type="checkbox" name="limaces" value="limaces"/>
+        </p>
+        <p><label for="satisfaction">Niveau de satisfaction :</label>
+          <input type="range" id="satisfaction" name="curseur" min="0" max="11" value="3">
+        </p>
+        <p><input type="button" value="Bouton"></p>
+        <p><input type="submit" value="Envoyer"></p>
+      </form>
+      <p>On constate que l'attribut <code>type</code>, de la balise <code>&ltinput&gt</code> permet 
+        de varier le type de formulaire à notre disposition (boutons, champ de saisie,...). 
+        Il existe d'autres <code>type</code> : tel, search, url, email, number, range, color ou list.</p>
+      <p>Si vous voulez découvrir ces autres types, vous pouvez par exemple consulter 
+          <a href="https://www.scriptol.fr/html5/formulaire.php" alt="saisir l'URL suivant dans un navigateur 
+          https://www.scriptol.fr/html5/formulaire.php">ce site web</a>.</p>
+      
+      <h4>Remarques :</h4>
+      <ul>
+      <li>Pour que les boutons soient mutuellement exclusifs, ils doivent avoir le même attribut
+          <code>name</code> : dans l'exemple de boutons radio précédent, on a précisé <code>name="categorie"</code>.</li>
+      <li>Le terme boutons radio vient des anciens postes radios. On pouvait mémoriser les stations de 
+        radio et les récupérer à l'aide de gros boutons munis de ressorts. 
+        Lorsqu'on enfonçait un bouton, un mécanisme ressortait le bouton qui avait été enfoncé 
+        auparavant : on ne pouvait sélectionner qu'un seul bouton à la fois.</li>
+      <li>Plutôt que d'utiliser une balise <code>&ltinput&gt</code> de type <code>bouton</code>, 
+        il existe une balise spécifique qui permet de faire la même chose : <code>&ltbutton&gt</code>. 
+        Le code suivant peut donc remplacer le code utilisé précédemment pour créer un bouton. On constate, 
+        ci-après que le rendu est identique avec ces deux codes différents :
+        <input type="button" value="Bouton">  <button type="button">Bouton</button></p>
+      </li>
+      </ul>
+
+      <h3>Les balises form et select</h3>
+
+      <p>Un autre élément important interaction est la liste déroulante générée par la balise 
+        <code>&ltselect&gt</code>.</p>
+
+      <h4>En voici quelques exemples ci-dessous :</h4>
+
+      <form>
+        <select name="menu">
+            <option value="volaille">Poulets frites</option>
+            <option value="veggie">Riz et lentilles</option>
+            <option value="poisson">Anchoix marinés</option>
+            </select>
+      </form>
+      <p>La balise <code>&ltselect&gt</code> autorise un seul choix par défaut, mais il peut être précisé
+        <code>multiple</code> dans la balise pour permettre de valider plusieurs choix simultanés. 
+        Dans ce cas les valeurs séléctionnées sont traitées comme un tableau.</p>
+      <form>
+        <select name="menu[]" multiple>
+          <option value="volaille">Poulets frites</option>
+          <option value="veggie">Riz et lentilles</option>
+          <option value="poisson">Anchoix marinés</option>
+        </select>
+      </form>
+      <p>Ce dernier formulaire avec sélecteur n'est pas élégant, mais il permet de sélectionner 
+        plusieurs choix en cliquant tout en laissant appuyée la touche "Ctrl". 
+        De plus, il est possible de sélectionner par défaut un (ou plusieurs éléments) en ajoutant 
+        l'attribut <code>selected</code> à la balise <code>&ltoption&gt</code>. Voir ci-dessous.</p>
+      <form>
+        <select name="menu[]" multiple>
+          <option value="volaille">Poulets frites</option>
+          <option value="veggie" selected>Riz et lentilles</option>
+          <option value="poisson">Anchoix marinés</option>
+        </select>
+      </form>
+
+      <h4>Exercice :</h4>
+
+      <p>Réaliser le visuel du formulaire suivant :</p>
+      <img src="Exo_Formulaire_HTML.png" width="30%">
+      <p>Pour cela :
+        <ul>
+          <li>vous utiliserez les balises <code>&ltinput&gt</code> et <code>&ltselect&gt</code>.</li>
+          <li>vous préciserez le <code>type</code> lors de l'utilisation d'une balise <code>input</code>.</li>
+          <li>vous préciserez le <code>name</code> dans chacun des cas (l'attribut <code>name</code> 
+            sera utilisé plus tard pour retrouver la valeur d'un élément d'un formulaire).</li>
+          <li>vous proposerez deux types de carte bancaire possibles : 'Visa' et 'Bleue' 
+            (carte par défaut).</li>
+        </ul>
+        <p><b>Remarque :</b> à ce stade, sans Javascript ou Brython, il est normal que votre bouton 
+          'Valider le paiement' soit sans effet.</p>
+      </p>
+
+      <h4>Correction :</h4>
+
+      <form>
+        <h2>Formulaire de paiement</h2>
+        <p>Les champs obligatoires sont suivis par .*.</p>
+        <h3>Informations de contact</h3>
+        <p>Qualité :
+        Monsieur <input type="radio" name="qual" value="M"/>
+        Madame <input type="radio" name="qual" value="F"/></p>
+        <p>Nom : .*.<input type="text" name="nom"/></p>
+        <p>e-mail : .*.<input type="email" name="mail"/></p>
+        <p>Mot de passe : .*.<input type="passwd" name="pass"/></p>
+        <h3>Informations de paiement</h3>
+        <p>Type de carte : 
+            <select name="menu">
+                <option value="Visa">Visa</option>
+                <option value="Bleue" selected>Bleue</option>
+            </select>
+        </p>
+        <p>Numéro : .*.<input type="text" name="num"/></p>
+        <p>Validité : .*.<input type="text" name="valid"/></p>
+        <p><em>format mm/aa</em></p>
+        <p><input type="submit" value="Valider le paiement"></p>
+      </form>
+
+      <h2>3. Rendre les formulaires interactifs avec Javascript et un simple navigateur</h2>
+
+      <p>Dans ce chapitre, l'idée est de rendre la page interactive, en traitant les réponses d'un 
+        formulaire. Ce traitement se fera localement, par le navigateur web, grace au langage 
+        Javascript (un résultat équivalent peut être obtenu avec Brython).</p>
+
+      <h3>Un exemple de formulaire interactif</h3>
+
+      <p>Cet exemple est le suivant :</p>
+      <form>
+        <p>Choix d'une nationalité :</p>
+          <select id="choix" name="lang" onchange="selection()">
+            <option value="ras">Choisir sa nationalité</option>
+            <option value="fr">Français</option>
+            <option value="zh">Chinois</option>
+            <option value="it">Italien</option>
+          </select>
+        <p>Vous avez choisi comme nationalité : <span id="nat">  </span> </p>
+      </form>
+      <p>Observer le code source de ce formulaire, en particulier 
+        les attributs de la balise <code>select</code>.</p>
+      <p>On remarque que l'attribut <code>onchange</code> a pour valeur le nom d'une fonction : 
+      <code>selected()</code>. Cette fonction est une fonction Javascript qu'il reste à écrire.</p>
+      <p>Quelques instructions Javascript sont à découvrir pour comprendre la suite...</p>
+      <ul>
+        <li><code>getElementById('id')</code> est une méthode qui récupère 
+          l'élément de la page identifié par 'id'.</li>
+          <ul><li>Par exemple <code>document.getElementById('cornichon')</code>  récupère 
+            l'élément de la page en cours, identifié dans sa balise par <code>id='cornichon'</code>.</li></ul>
+        <li><code>selectedIndex</code>est une méthode qui renvoie la valeur l'option choisie 
+          par une liste déroulante ; plus généralement, cette méthode indique le rang 
+          à partir de 0 de l'élément de la liste qui a été sélectionnée par l'utilisateur.</li>
+          <ul><li>Par exemple <code>selecteur.selectedIndex</code>  renvoie l'indice du 
+            choix fait par l'utilisateur de la liste déroulante nommée 'selecteur'.</li></ul>
+        <li><code>innerHTML</code> est une variable qui contient le 
+          contenu HTML d'un élément d'une page html. On peut le récupérer mais aussi le changer.</li>
+          <ul><li>Par exemple <code>document.getElementById('horloge').innerHTML = "Coucou"</code> 
+            intégre du contenu html (ici, le texte "Coucou") à l'emplacement de la page 
+            identifié par l'id nommé 'horloge'.</li></ul>
+      </ul>
+      <p>Voici, ci-dessous, une correction possible pour la fonction <code>selected()</code> 
+      qui permettra d'afficher le choix de l'utilisateur dans le contenu HTML de la page.</p>
+      <code>function selection() {<br/>
+        &nbsp;   const selecteur = document.getElementById('choix');<br/>
+        &nbsp;   const monChoix = selecteur[selecteur.selectedIndex];<br/>
+        &nbsp;   document.getElementById('nat').innerHTML = monChoix.text;<br/>
+        }</code>
+      <h4>Exercice :</h4>
+      <ul>
+        <li>Intégrer ce code Javascript à la page pour rendre le dernier formulaire interactif.</li>
+        <li>Mieux encore, créer un fichier séparé <code>formulaires.js</code> pour votre script 
+        puis ajouter une ligne à votre code HTML (bloc <code>&lthead></code>) afin de faire le lien 
+        vers ce fichier : <code>&ltscript src="formulaires.js">&lt/script></code></li>
+      </ul>
+      <p><b>Remarque : </b>la correction mise à votre disposition (NSI_6_5C) montre qu'il est possible 
+      d'utiliser la console du navigateur pour lire les éventuels messages d'erreurs et 
+      pour afficher ce que vous voulez, à l'aide de l'instruction <code>console.log()</code>.</p>
+
+      <h3>Un formulaire pour choisir votre spécialité</h3>
+
+      <p>Voici un formulaire à choix multiple pour sélectionner les spécialités à garder en terminale.</p>
+      <form>
+        <fieldset>
+          <legend>Veuillez sélectionner vos spécialités pour l'année prochaine :</legend>
+          <div>
+            <input type="checkbox" id="nsi" name="interest" value="nsi">
+            <label for="nsi">NSI</label>
+          </div>
+          <div>
+            <input type="checkbox" id="ma" name="interest" value="ma">
+            <label for="ma">Maths</label>
+          </div>
+          <div>
+            <input type="checkbox" id="svt" name="interest" value="svt">
+            <label for="svt">SVT</label>
+          </div>
+          <div>
+            <button type="button" id="bouton" onclick="choix()">Bouton</button>
+          </div>
+        </fieldset>
+      <p id="choix_spe"></p>
+      </form>
+
+      <h4>Ecrire le code Javascript qui permettra...</h4>
+
+      <ul>
+        <li>d'afficher les spécialités choisies.</li>
+        <li>d'afficher un message d'avertissement si l'utilisateur coche les trois cases.</li>
+      </ul>
+
+      <h4>Vous aurez besoin...</h4>
+
+      <ul>
+        <li>d'ajouter un élément d'affichage dans le code HTML. Un paragraphe par exemple.</li>
+        <li>d'identifier par un nom unique cet élément.</li>
+        <li>d'utiliser l'instruction <code>document.getElementById("id").checked</code> 
+        pour atteindre l'état de chaque case (<code>true</code> si la case est cochée, 
+        <code>false</code> sinon)</li>
+        <li>d'utiliser <a href=https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/if...else>
+        les instructions <code>if</code> et <code>else</code> en Javascript</a></li>
+        <li>d'être attentif à la syntaxe particulière de Javascript :</li>
+        <ul>
+          <li>l'utilisation de <code>&&</code> à la place de <code>and</code>.</li>
+          <li>pas de majuscule à <code>true</code> et <code>false</code>.</li>
+          <li>l'utilisation d'accolades pour délimiter les blocs.</li>
+          <li>l'utilisation de points-virgules en fin de ligne d'instruction.</li>
+        </ul>
+      </ul>
+    </section>
+    <footer>
+      <a href=http://creativecommons.org/licenses/by-nc-sa/3.0/fr/>
+        <img src=https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png 
+          alt="Licence Creative Commons CC BY-NC-SA"></a>
+      <p style="text-align: center;">Auteur : David Landry, Lycée Clemenceau - Nantes</p>
+      <p style="text-align: center;">D'après des documents partagés par...</p>
+      <p style="text-align: center;"><a  href=http://www.monlyceenumerique.fr/index_nsi.html#premiere>
+        JC. Gérard, T. Lourdet, J. Monteillet, P. Thérèse, sur le site monlyceenumerique.fr</a></p>
+    </footer>
+  </body>
+</html>
