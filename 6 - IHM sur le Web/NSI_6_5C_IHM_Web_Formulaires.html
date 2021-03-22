@@ -34,9 +34,14 @@
     </header>
 
     <section>
-      <p><b>Remarque préalable : </b>Ce cours doit être lu à la fois pour sa partie "code",
-         mais aussi pour son rendu dans un navigateur. Il est donc fortement conseillé d'utiliser le 
-         même dispositif de lecture que précédemment (VSCodium + Liver server).</p>
+      <p><b>Remarques préalables : </b></p>
+      <hl>
+        <li>Ce cours doit être lu à la fois pour sa partie "code",
+          mais aussi pour son rendu dans un navigateur. Il est donc fortement conseillé d'utiliser le 
+          même dispositif de lecture que précédemment (VSCodium + Liver server).</li>
+        <li>N'hésitez pas à appliquer votre fichier CSS à cette page HTML 
+          pour la rendre plus attrayante.</li>
+      </hl>
 
       <h2>1. Un formulaire, pour quoi faire ? Un formulaire, comment faire ?</h2>
 
@@ -61,16 +66,16 @@
       <p>Les attributs <code>value</code> seront des variables utilisées par JavaScript ou Brython.</p>
       <h4>En voici quelques exemples ci-dessous :</h4>
       <form>
-        <p>Login : <input type="text" name="login"/></p>
-        <p>Mot de passe : <input type="password" name="pass"/></p>
+        <p>Login : <input type="text" name="login" required></p>
+        <p>Mot de passe : <input type="password" name="pass" required></p>
         <p>Catégorie :
-          Humain <input type="radio" name="categorie" value="hu"/>
-          Extraterrestre <input type="radio" name="categorie" value="ex"/>
+          Humain <input type="radio" name="categorie" value="hu">
+          Extraterrestre <input type="radio" name="categorie" value="ex">
         </p>
         <p>Préférences pour le petit-déjeuner : 
-          Jus de fruit <input type="checkbox" name="jus" value="jus"/>
-          Tartines beure / confiture <input type="checkbox" name="beurre" value="beurre"/>
-          Tartines limaces / uranium<input type="checkbox" name="limaces" value="limaces"/>
+          Jus de fruit <input type="checkbox" name="jus" value="jus">
+          Tartines beure / confiture <input type="checkbox" name="beurre" value="beurre">
+          Tartines limaces / uranium<input type="checkbox" name="limaces" value="limaces">
         </p>
         <p><label for="satisfaction">Niveau de satisfaction :</label>
           <input type="range" id="satisfaction" name="curseur" min="0" max="11" value="3">
@@ -93,6 +98,8 @@
         radio et les récupérer à l'aide de gros boutons munis de ressorts. 
         Lorsqu'on enfonçait un bouton, un mécanisme ressortait le bouton qui avait été enfoncé 
         auparavant : on ne pouvait sélectionner qu'un seul bouton à la fois.</li>
+      <li>Il est possible de rendre un champ de réponse obligatoire en ajoutant l'attribut 
+        <code>required</code> dans la balise <code>&ltinput&gt</code>.</li>
       <li>Plutôt que d'utiliser une balise <code>&ltinput&gt</code> de type <code>bouton</code>, 
         il existe une balise spécifique qui permet de faire la même chose : <code>&ltbutton&gt</code>. 
         Le code suivant peut donc remplacer le code utilisé précédemment pour créer un bouton. On constate, 
