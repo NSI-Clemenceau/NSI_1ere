@@ -1,0 +1,81 @@
+
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans|Big+Shoulders+Display|Lobster|Noto+Sans+TC|Turret+Road&display=swap');
+
+
+      body    {
+        width:800px;
+        padding: 10px 30px 0 30px;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 18px; 
+        line-height: 24px;     }
+
+      h1 { 
+        margin: 10px 40% 20px 0; 
+        padding: 0 0 16px 0; 
+        color: #1BB2E0;
+        font-size: 42px; 
+        font-weight: bold; 
+        border-bottom: 1px solid #999; }
+
+      h2 { 
+        color: #1BB2E0;
+        font-family: 'Turret Road', cursive;
+
+        font-size: 26px;
+        border-bottom: 1px solid #999;}
+      
+      h3 { 
+        color: #1BB2E0;
+        font-size: 22px;}
+      
+      p { 
+        margin: 0 0 0 0; 
+        border-left: 1px solid #999;
+        padding: 5px 0 0px 10px;}
+
+      ul {
+        margin: 0 0 0 0; 
+        border-left: 1px solid #999;
+        padding: 5px 0 0px 50px;}
+
+      em {
+        margin: 0 0 0 10px;
+        font-style: italic; 
+        font-size: 16px; 
+        color: #999; 
+        font-weight: normal;}
+
+      header {
+        width: 100%;
+        margin: 20px auto 30px auto;
+        font-size: 14px;
+        font-weight: bold;}
+
+      aside { 
+        margin: 0 10px 0px 10px;
+        float: right; } 
+
+      header p { 
+        font-family: 'Lobster', cursive;
+        font-size: 16px;
+        border-left: 0;
+        color: #666; }
+
+      header ul {
+        font-style: italic;
+        font-size: 18px;
+        font-weight: bold;
+        border-left: 0;
+        color: #777; }
+
+      section h1 {
+        font-style: italic;
+        font-size: 20px;
+        padding: 10px 20px 0px 10px;}
+
+      .photo {
+        width: 300px}
+
+      .mel {
+        text-decoration: none;}
+
