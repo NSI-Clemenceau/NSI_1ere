@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>NSI_6_6_Interactions_Client_Serveur</title>
+    <style>
+      body {
+        font-family: 'Noto Sans TC', sans-serif;
+      }
+      h1 { 
+        color: #1BB2E0;
+      }
+      h1:hover {
+        color: #af74b4;
+      }
+      img, form {
+        padding-left: 50px;
+        padding-right: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      code {
+        padding: 2px 2px;
+        color: #267988;
+        background-color: #f9f2f4;
+      }
+      .tab {
+        margin-left: 1em;
+      }
+      .double_tab {
+        margin-left: 2em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Comment gérer l'interactivité d'un formulaire à distance ?</h1>
+    </header>
+
+    <section>
+      <p><b>Remarque :</b> n'hésitez pas à appliquer votre fichier CSS à cette page HTML 
+      pour la rendre plus attrayante.</p>
+      
+      <h2>Interactions Client - Serveur</h2>
+
+      <p>Le schéma client-serveur désigne un mode de communication entre programmes : 
+        l'un est qualifié de "client", c'est celui qui envoie des requêtes. L'autre est appelé 
+        "serveur" et il répond aux requêtes du client.  
+        Dans le cas du Web, le client est le navigateur web et on utilise le protocole HTTP 
+        pour communiquer avec le serveur.</p>
+      <p>Les inventeurs du Web, Tim Berners-Lee et Robert Caillau ont défini au CERN 
+        entre 1989 et 1991 ses trois piliers, les protocoles 
+        <a href=https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol>HTTP</a>, 
+        <a href=https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_URL>URL</a> et 
+        <a href=https://developer.mozilla.org/fr/docs/Glossary/HTML>HTML</a>. Ces trois protocoles 
+        sont nécessaires à la compréhension des interactions client-serveur.
+      </p>
+
+      <h3>L'adresse URL</h3>
+
+      <p>Une adresse <a href=https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_URL>URL</a>
+         pour "Uniform Ressource Locator" identifie une ressource sur le Web. 
+        La syntaxe des URL est standardisée.</p>
+      <p>Par exemple, décomposons l'URL suivante : <a href=https://www.gnu.org/gnu/linux-and-gnu.fr.html>
+        https://www.gnu.org/gnu/linux-and-gnu.fr.html</a></p>
+      <ul>
+        <li>le protocole est HTTPS (version sécurisée par TLS du protocole HTTP).</li>
+        <li>le nom de domaine sur Internet du serveur Web est gnu.org.</li>
+        <li>www est un sous-domaine du domaine gnu.org.</li>
+        <li>gnu étant déjà un sous-domaine du domaine principal org 
+          (org est un TLD, c'est à dire un "Top Level Domain").</li>
+        <li>gnu/linux-and-gnu.fr.html est le chemin vers la ressource sur le serveur : 
+          le fichier linux-and-gnu.fr.html qui se trouve dans le dossier public gnu.</li>
+      </ul>
+      <p>Le schéma suivant résume assez bien la structure d'une URL :</p>
+      <img src=URL.png alt="Structure d'une adresse URL">
+      <h3>Le langage HTML</h3>
+
+      <p>HTML, pour Hypertext Markup Language, est le langage de description des 
+        documents textes disponibles sur le Web qui sont reliées entre eux par des 
+        liens hypertextes. Il s’agit d’un langage à balises. </p>
+      <p>En pratique, d’autres types de ressources sont accessibles sur le Web par une URL : 
+        des images, des fichiers de données (aux formats CSV, JSON …), des videos,… 
+        Par ailleurs les pages sont désormais réalisées en combinant HTML avec CSS pour 
+        la mise en forme, le positionnement, certains effets visuels et Javascript pour 
+        la programmation événementielle nécessaire à l’interactivité côté client.</p>
+      <img src=Element-HTML.png alt="Structure d'un élément HTML">
+
+      <h3>Le protocole HTTP</h3>
+
+      <P>Le protocole HTTP, acronyme d’Hypertext Transfer Protocol, est un protocole de la 
+        couche application qui décrit le format des échanges de données entre un client et un serveur 
+        sur le Web. Un échange HTTP s’établit selon le schéma suivant :</P>
+      <ul>
+        <li>Le client saisit une URL dans la barre d’adresse du navigateur (ou en cliquant sur 
+          un hyperlien), elle est "résolue" en adresse IP par 
+          <a href=https://fr.wikipedia.org/wiki/Domain_Name_System alt="Service DNS sur Wikipedia">
+            le service DNS</a>.</li>
+        <li>Une connexion TCP entre le client et le serveur est alors mise en place.</li>
+        <li>Le client envoie une requête HTTP.</li>
+        <li>Le serveur retourne une réponse HTTP, lue par le client. 
+          S’il y a un contenu, il est affiché par le navigateur du client.</li>
+        <li>Fermeture de la connexion ou demande de réutilisation pour les requêtes suivantes.</li>
+      </ul>
+
+      <h2>Les interactions client-serveur pour l'envoi de formulaires</h2>
+      <h3>Premières observations de requêtes HTTP sur des pages web</h3>
+
+      <p>Effectuer les actions suivantes :</p>
+      <ul>
+        <li>Avec un navigateur Web, demander la page d’adresse
+          <a href="http://frederic-junier.org/NSI/sandbox/index.html">
+            http://frederic-junier.org/NSI/sandbox/index.html</a>.</li>
+        <li>Ouvrir la barre d’outils de développement en appuyant sur la touche
+          de fonction <code>F12</code> et sélectionner l’onglet Réseau (Network).</li>
+        <li>Au besoin, rafraichir la page avec la combinaison de touches <code>Ctr + R</code>.</li>
+        <li>Sélectionner la page actuelle "index.html" dans l'onglet "Name". On peut voir les 
+          entêtes de la requête et de la réponse HTTP.</li>
+      </ul>
+      <p>Répondre aux questions suivantes :</p>
+      <ul>
+        <li>Que représente le code d’état (Status code) de la réponse HTTP ?</li>
+          <ul><li>200 si le chargement de page s'est effectué sans soucis.</li></ul>
+          <ul><li>304 si le chargement de page est inutile (ex : page déjà en cache 
+            après un rafraichissement F5).</li></ul>
+        <li>Quelle est la méthode de cette requête HTTP ? GET ou POST ?</li>
+          <ul><li>Méthode GET.</li></ul>
+        <li>Quelles informations sur le client sont transmises au serveur
+          dans l’entête de la requête ?</li>
+          <ul><li>Nombreuses (OS et Navigateur utilisé, type de contenu, site d'où vient la requête, langue,...).</li></ul>
+        <li>Quelles informations sur le serveur sont transmises au client
+          dans l’entête de la réponse ?</li>
+          <ul><li>Nombreuses (Date, type de contenu, taille, type de serveur (Apache),...).</li></ul>
+      </ul>
+
+      <h3>Quelques requêtes HTTP particulières</h3>
+
+      <p>Effectuer de nouvelles requêtes avec les URL suivantes. 
+      Bien observer le détail des URL puis répondre aux questions posées :</p>
+      <ul>
+        <li><a href="http://frederic-junier.org/NSI/sandbox/">http://frederic-junier.org/NSI/sandbox/</a>.
+          <ul><li>Quelle différence avec la requête initiale ?</li></ul></li>
+          <ul><li>L'adresse ne pointe plus vers un fichier mais vers un dossier. Dans les faits, 
+            le serveur choisira toujours un fichier index.html s'il existe dans le dossier demandé.</li></ul>
+        <li><a href="https://frederic-junier.org/NSI/sandbox/">https://frederic-junier.org/NSI/sandbox/</a>. 
+          <ul><li>Quelle différence avec la requête initiale peut-on observer dans la barre
+            d’adresse du navigateur ?</li></ul> </li>
+            <ul><li>Protocole sécurisé HTTPS : les données sont cryptés lors de l'échange, 
+              par le protocole TLS (Voir BD en fin de cette page web).</li></ul>
+        <li><a href="http://frederic-junier.org/NSI/Sandbox/index.html">http://frederic-junier.org/NSI/Sandbox/index.html</a>. 
+          <ul><li>Quel est le code d’état de la réponse ? Explication ?</li></ul> </li>
+          <ul><li>404 : La page n'est pas trouvé car l'URL est innexacte (majuscule à Sandbox).</li></ul>
+        <li><a href="http://frederic-junier.org/NSI/interdit">http://frederic-junier.org/NSI/interdit</a>. 
+          <ul><li>Quel est le code d’état de la réponse ? Explication ?</li></ul> </li>
+          <ul><li>403 : la page a bien été trouvée par le serveur mais le client n'a pas les droits 
+            pour la télécharger.</li></ul>
+      </ul>
+
+      <h3>Les inspecteurs mènent la requête !</h3>
+
+      <p>Voici les copies d'écran des "inspecteurs" de deux navigateurs web différents. 
+        Dans les deux cas, la même page est inspectée. Observez-vous une différence ?</p>
+      <table>
+        <tr>
+          <th><img src=Inspecteur_Firefox.png alt="inpecteur du navigateur Firefox"></th>
+          <th><img src=Inspecteur_Brave.png alt="inpecteur du navigateur Brave"></th>
+        </tr>
+        <tr>
+          <th>Inspecteur de Firefox</th>
+          <th>Inspecteur de Brave</th>
+        </tr>
+      </table>
+      
+      <h3>Passage de paramètres dans une URL</h3>
+
+      <p>Ouvrir un navigateur Web.</p>
+      <ol>
+        <li>
+          <p>Demander la page d’adresse
+            <a href="https://frederic-junier.org/NSI/sandbox/accueil.php">
+             http://frederic-junier.org/NSI/sandbox/accueil.php</a></p>
+          <p>Quel est l’affichage obtenu ?</p>
+          <ul><li>Une page affichant simplement "Bonjour".</li></ul>
+        </li>
+        <li>
+          <p>Demander la page d’adresse<br />
+          <a href="https://frederic-junier.org/NSI/sandbox/accueil.php?nom=Turing&amp;prenom=Alan">
+            http://frederic-junier.org/NSI/sandbox/accueil.php?nom=Turing&amp;prenom=Alan</a></p>
+          <ul>
+            <li>D'après l'URL, demande-t-on à ouvrir la même page web ?</li>
+            <ul><li>Oui, on demande le même fichier accueil.php, c'est donc la même page.</li></ul>
+            <li>Quel est l’affichage obtenu ? </li>
+            <ul><li>Une page web affichant "Bonjour Alan Turing".</li></ul>
+          </ul>
+          <p>La partie <code>?nom=Turing&amp;prenom=Alan</code> de
+          l’URL est une <em>chaîne de requête</em>, elle commence par le symbole <code>?</code> puis
+          contient une liste de paires <code>nom=valeur</code> séparées par un symbole
+          esperluette <code>&amp;</code>. Ces paramètres ne font pas partie de l’adresse de
+          la ressource mais sont une façon pour le client de transmettre des
+          informations au serveur.</p>
+          <table>
+            <tr><img src="Parametres.png" alt="chaîne de paramètres" title="chaîne de paramètres" /></tr>
+            <tr><th>Inspection de la chaîne de requête</th></tr>
+          </table>
+        </li>
+        <li>
+          <p>Remplacer Turing par votre nom et Alan par votre prénom dans
+          l’URL précédente. Que peut-on remarquer ? À votre avis, que se
+          passe-t-il sur le serveur lorsqu’il reçoit la requête HTTP ?</p>
+        </li>
+        <li><p>Voici le contenu du fichier <code>accueil.php</code> sur le serveur.</p>
+          <p><div><code>&lt;!DOCTYPE html&gt;<Br/>
+            <span>&lt;html lang="fr"&gt;</span><Br/>
+            <span class="tab">&lt;head&gt;</span><Br/>
+              <span class="double_tab">&lt;title&gt;</span>Accueil <span>&lt;/title&gt;</span><Br/>
+              <span class="double_tab">&lt;meta</span> <span>charset="utf-8"&gt;</span>    <Br/>
+            <span class="tab">&lt;/head&gt;</span> <Br/>
+            <span class="tab">&lt;body&gt;</span><Br/>
+            <span class="double_tab">&lt;h1&gt;</span>
+            <span>&lt;?php echo "Bienvenue " . $_GET['prenom'] . " " . $_GET['nom'] ; ?&gt; &lt;/h1&gt;</span><Br/>
+            <span class="tab">&lt;/body&gt;</span><Br/>
+            <span>&lt;/html&gt;</span> <Br/>
+            </code></div>
+          </p></li>
+        <ul>
+          <li> S’agit-il d’un texte écrit en
+            <a href="https://developer.mozilla.org/fr/docs/Glossaire/HTML">HTML</a> ? Faire
+            une recherche sur la signification de l’acronyme
+            <a href="https://developer.mozilla.org/fr/docs/Glossaire/PHP">PHP</a>.</li>
+            <ul><li>Oui, c'est une page HTML, toutefois elle contient également du code PHP 
+              qui permet de rendre cette page dynamique.</li></ul>
+          <li>Enregistrer l’URL testée précédemment dans les marque-pages du navigateur. Ouvrir un
+              autre onglet et cliquer sur le signet enregistré. Retrouve-t-on la même page Web ?</li>
+              <ul><li>Oui, c'est la même.</li></ul>
+          <li>Repérer dans ce code source la méthode employée pour atteindre les valeurs
+            passées en paramètre.</li>
+            <ul><li>C'est la méthode GET qui a été utilisée (Request Method).</li></ul>
+      </ul>
+      </ol>
+      <h2>Formulaire et passage de paramètres par la méthode GET ou la méthode POST</h2>
+      
+      <h3>Méthode GET</h3>
+      
+      <p>Ouvrir avec un navigateur Web la page d’URL : <a href="http://frederic-junier.org/NSI/sandbox/formulaire-get.html">
+          http://frederic-junier.org/NSI/sandbox/formulaire-get.html</a></p>
+      <ul>
+        <li>Cliquer sur le bouton <code>Envoyer</code>.</li>
+          <ul><li>Que se passe-t-il ?</li>
+            <ul><li>Une page web affichant "Bonjour".</li></ul></ul>
+        <li>Rafraîchir la page avec <code>F5</code>.
+          <ul><li>Que se passe-t-il ?</li>
+          <ul><li>Une page web affichant "Bonjour Alan Turing".</li></ul></ul>
+        <li>Changer les valeurs des champs <code>Prénom</code> et <code>Nom</code> du formulaire
+          puis cliquer sur le bouton <code>Envoyer</code>.</li>
+          <ul><li>Que se passe-t-il ?</li>
+          <ul><li>Une page web affichant "Bonjour ... ...", avec les noms et prénoms saisis 
+            par l'utilisateur. La page affichée tient donc compte des résultats du formulaire.</li></ul></ul>
+        <li>Ouvrir la fenêtre des outils de développement et afficher dans l’onglet Réseau 
+          l’entête de la requête HTTP.</li>
+          <ul><li>Vérifier que la méthode utilisée est bien la méthode GET</li>
+            <ul><li>C'est la méthode GET qui a été utilisée (Request Method).</li></ul>
+            <li>Que remarque-t-on dans l'URL de la requête ?</li>
+            <ul><li>Les résultats de formulaires sont passés dans la chaîne de requête de l'URL. 
+              C'est à dire que les mots envoyés par le formulaire sont présents après un point 
+              d'interrogation, séparés par un &.
+            </li></ul>
+          </ul> 
+      </ul>
+      <p><img src="Entete-get.png" alt="Entête GET" title="Entête GET" /></p>
+      <ul>
+        <li>Afficher le code source de la page <code class="language-plaintext highlighter-rouge">formulaire-get.html</code> avec le
+  raccourci clavier <code class="language-plaintext highlighter-rouge">CRTL + U</code>.</li>
+        <ul><li>Repérer la zone de code qui définit que la méthode <code>GET</code> doit être utilisée.</li>
+        <ul><li><code>&lt;form action = "accueil.php" method="GET"&gt;</code></form></li></ul></ul>
+      </ul>
+    
+      <h3>Méthode POST</h3>
+
+      <p>Ouvrir avec un navigateur Web la page d’URL : <a href="http://frederic-junier.org/NSI/sandbox/formulaire-post.html">
+        http://frederic-junier.org/NSI/sandbox/formulaire-post.html</a></p>
+      <ul>
+        <li>Cliquer sur le bouton <code>Envoyer</code>. </li>
+          <ul><li>Que se passe-t-il ?</li>
+          <ul><li>La même choses que précédemment : une page web affichant "Bonjour".</li></ul></ul>
+        <li>Changer les valeurs des champs <code>Prénom</code> et <code>Nom</code> du formulaire
+          puis cliquer sur le bouton <code>Envoyer</code>. </li>
+          <ul><li>Que se passe-t-il ?</li>
+            <ul><li>La même choses que précédemment : une page web affichant "Bonjour ... ...", 
+              avec les noms et prénoms saisis par l'utilisateur.</li></ul></ul>
+          <ul><li>Observe-t-on un changement dans l’URL de la requête ? dans son entête ?</li>
+            <ul><li>Cette fois-ci, l'URL de requête est très simple, sans chaîne de requête.</li></ul></ul></li>
+        <li>Rafraîchir la page avec <code>F5</code>.</li>
+          <ul><li>Que se passe-t-il ?</li>
+          <ul><li>Un message d'avertissement s'affiche (popup). Ce message prévient que les mêmes 
+            informations seront transmises au serveur une nouvelle fois.</li></ul></ul>
+      </ul>
+      <p><img src="Avertissement-post.png" alt="Avertissement POST" title="Avertissement POST" /></p>
+      <ul>
+        <li>Afficher le code source de la page <code>formulaire-post.html</code> avec
+          le raccourci clavier <code>CRTL + U</code>. </li>
+          <ul><li>Quels sont les deux changements par rapport au code de 
+              <code>formulaire-get.html</code> ?</li>
+            <ul><li>La méthode <code>POST</code> a été choisie comme valeur d'attribut <code>method</code>, 
+            dans la balise <code>form</code>.</li>
+            <li>La valeur de l'attribut <code>action</code> pointe vers une adresse différente : 
+              <code>accueil-post.php</code></li></ul></ul>
+      </ul>
+
+      <h2>L'interactivité Client - Serveur par protocole HTTP, le résumé</h2>
+      <h3>Les méthodes GET ou POST des formulaires HTML</h3>
+      <p>En HTML, un formulaire est un élément qui permet de transmettre des informations à
+        un serveur Web. Il est composé d’un élément <code>&lt;form
+        action="http://domaine/cible" method="GET ou POST"&gt;</code> qui contient un ou
+        plusieurs widgets (éléments HTML <code>&lt;select&gt;</code> ou <code>&lt;input&gt;</code> 
+        permettant de saisir les entrées du client) et au moins un élément <code>&lt;button
+        type="submit&gt;Bouton d'envoi&lt;/button&gt;</code>. </p>
+      <p>Un clic sur ce bouton déclenche l’exécution d’une requête HTTP qui va
+        transmettre les données saisies selon les valeurs des attributs <code>action</code>
+        et <code>method</code> de l’élément <code>&lt;form&gt;</code> :</p>
+        
+      <ul>
+        <li><code>action</code> a pour valeur l’URL du fichier auquel sera envoyé le formulaire. 
+          Ce fichier, situé sur le serveur, est un programme écrit dans un langage de script, comme
+          <a href="https://developer.mozilla.org/fr/docs/Glossaire/PHP">PHP</a>, qui va
+          prendre en entrée les paramètres du formulaire transmis par le
+          client, les traiter et générer la page Web en HTML, qui lui sera renvoyée.</li>
+        <li><code>method</code> peut prendre deux valeurs
+          <a href="https://developer.mozilla.org/fr/docs/Web/HTTP/M%C3%A9thode/GET">GET</a>
+          ou <a href="https://developer.mozilla.org/fr/docs/Web/HTTP/M%C3%A9thode/POST">POST</a>
+          (en minuscule ou majuscule). Ce sont les deux modes de transmission
+          des paramètres du formulaire qui sont deux méthodes distinctes du
+          protocole HTTP :
+        <ul>
+          <li>avec la méthode GET, les données du formulaire sont assemblées dans une chaîne de
+            paires <code>nom=valeur</code> séparées par le symbole <code>&amp;</code> qui est ajoutée à
+            la fin de l’URL après le délimiteur <code>?</code>.</li>
+          <li>avec la méthode POST les données du formulaire sont transmises toujours dans le corps
+          de la requête. Les données n’apparaissent donc pas dans l’URL.</li>
+        </ul>
+        </li>
+      </ul>     
+
+      <h3>Caractéristiques de la méthode
+      <a href="https://developer.mozilla.org/fr/docs/Web/HTTP/M%C3%A9thode/GET">GET</a></h3>
+      
+      <ul>
+        <li>Toutes les informations sont transmises en clair dans l’URL. Celle-ci est limitée 
+          en taille donc la méthode GET
+           ne peut pas être utilisée pour transmettre des informations trop longues.</li>
+        <li>Une requête GET est constituée uniquement d’un entête, elle n’a pas de corps.</li>
+        <li>Elle ne modifie pas l’état du serveur, elle est utilisée uniquement
+      pour demander une ressource. Un exemple classique d’utilisation est
+      la formulation d’une requête à l’aide du formulaire d’un moteur de recherche.
+      L’URL générée peut être utilisée plusieurs fois et conservée comme marque-page.</li>
+      </ul>
+      
+      <h3>Caractéristiques de la méthode
+      <a href="https://developer.mozilla.org/fr/docs/Web/HTTP/M%C3%A9thode/POST">POST</a></h3>
+      
+      <ul>
+        <li>Les données sont transmises dans le corps de la requête, il n’y a
+      pas de restriction de taille.</li>
+        <li>Les données n’apparaissent pas dans l’URL, néanmoins, si le protocole HTTP est employé sans chiffrement, il suffit 
+      d’intercepter la requête pour accéder aux données en clair.</li>
+        <li>Les données envoyées peuvent modifier l’état du serveur. Par
+      exemple, les requêtes POST sont utilisées pour les modifications de bases de données sur le
+      serveur (achats, réservation, transfert de fichiers …). Par
+      conséquent si on veut renvoyer les données d’un formulaire, un
+      message en popup avertit que ce nouvel envoi peut modifier l’état du
+      serveur et par exemple d’enregistrer un nouvel achat s’il s’agit
+      d’un formulaire de commande.</li>
+      </ul>
+
+      <h3>Autres méthodes HTTP</h3>
+
+      <p>Sans rentrer dans les détails, on peut toutefois remarquer que les 
+        méthodes GET et POST ne sont pas les seules méthodes du protocole HTTP. Les plus curieux d'entre-vous 
+        pourront jeter un coup d'oeil 
+        <a href=https://developer.mozilla.org/fr/docs/Web/HTTP/Methods alt="Méthodes HTTP">
+          au site suivant</a>.</p>
+
+      <h2>Le HTTPS en BD</h2>
+
+      <a href=https://blog.octo.com/bd-le-https/ alt="Le HTTP expliqué en BD, Source : https://blog.octo.com/bd-le-https/">
+        <img src=HTTPS.png alt="Le HTTP expliqué en BD, Source : https://blog.octo.com/bd-le-https/"></a>
+    </section>
+    <footer>
+      <a href=http://creativecommons.org/licenses/by-nc-sa/3.0/fr/>
+        <img src=https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png 
+          alt="Licence Creative Commons CC BY-NC-SA"></a>
+      <p style="text-align: center;">Auteur : David Landry, Lycée Clemenceau - Nantes</p>
+      <p style="text-align: center;">D'après des documents partagés par...</p>
+      <p style="text-align: center;"><a  href=https://github.com/parc-nsi/premiere-nsi>
+        Frédéric Junier, Lycée du Parc - Lyon</a></p>
+    </footer>
+  </body>
+</html>
