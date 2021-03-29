@@ -34,14 +34,14 @@
       document <= html.B("Hello World ! ")
 
       # Exercice 2
-      def change_texte1(ev):
+      def change_texte2(ev):
         document["texte_ephemere"].textContent = "Eh bien voilà, le texte a changé !"
-      document["bouton1"].bind("click", change_texte1)
+      document["bouton2"].bind("click", change_texte2)
 
       # Exercice 3
-      def change_texte2(ev):
-        document["texte_ephemere"].textContent = f"La valeur du bouton 2 est {ev.target.value}"
-      document["bouton2"].bind("click", change_texte2)
+      def change_texte3(ev):
+        document["texte_ephemere"].textContent = f"La valeur du bouton 3 est {ev.target.value}"
+      document["bouton3"].bind("click", change_texte3)
 
       # Exercice 4 (approfondissement)
       i = 0
@@ -204,8 +204,8 @@
         de souris pour modifier du contenu.</p>
       <p>Voici donc plusieurs boutons :</p>
       <button name="button">Bouton minimal</button>
-      <button name="button" id="bouton1">Bouton identifiable</button>
-      <button name="button" id="bouton2" value=5>Bouton identifiable avec valeur</button>
+      <button name="button" id="bouton2">Bouton identifiable</button>
+      <button name="button" id="bouton3" value=5>Bouton identifiable avec valeur</button>
       <p><strong>Remarques : </strong></p>
       <ul>
         <li>on a ajouté un attribut <EM>id</EM> aux deux derniers boutons pour les rendre identifiables.</li>
