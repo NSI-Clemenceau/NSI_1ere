@@ -4,23 +4,24 @@
 
 Ce dépôt compile les __cours de première, dispensés au Lycée Clemenceau à Nantes, en spécialité NSI__ (Numérique et Sciences Informatiques).
 
-Ces cours sont essentiellement composés de __notebooks__.
+Ces cours sont essentiellement composés de __notebooks__, mais pas seulement.
 
-Ces notebooks peuvent être :
+Ces activités peuvent être :
 
-- un moyen de travailler un nouveau thème (numérotation classique NSI_X_X_....ipynb)
-- un moyen d'appliquer les nouvellles notions par des exercices (NSI_X_XE_....ipynb)
-- des propositions de correction de ces exercices (NSI_X_XC_....ipynb)
-- un moyen d'approfondir un thème, hors programme (NSI_X_XA_....ipynb)
-- un "fil rouge", organisé comme un projet guidé, sur le thème "Harry Potter" (NSI_PX_....ipynb))
+- un moyen de travailler un nouveau thème (numérotation classique NSI_X_X_...).
+- un moyen d'appliquer les nouvellles notions par des exercices (NSI_X_XE_...).
+- des propositions de correction de ces exercices (NSI_X_XC_...).
+- un moyen d'approfondir un thème, hors programme (NSI_X_XA_...).
+- un "fil rouge", organisé comme un projet guidé, sur le thème "Harry Potter" (NSI_PX_...).
+- un mini-projet, point d'étape fonctionnel du fil rouge "Harry Potter" (Dossier Projets).
 
 Ils sont déposés au fur et à mesure de leur élaboration depuis la rentrée 2020 et sont mis à jour au besoin.
 
-Les sujets d'évaluation, à part les projets, ne sont pas mis en ligne.
+Les sujets d'évaluation, à part les mini-projets, ne sont pas mis en ligne.
 
 ## Visualisation / modification et exécution des notebooks
 
-Framagit ne permet pas d'utiliser, ni même de pleinement visualiser nativement les notebooks Jupyter.
+Gitlab ne permet pas d'utiliser, ni même de pleinement visualiser nativement les notebooks Jupyter.
 
 Pour profiter pleinement des notebooks, deux options semblent intéressantes :
 
@@ -39,9 +40,9 @@ Chaque début de cours est ponctué d'un (ou plusieurs) __exposés à oral__, ch
 
 Cet exposé, appelé __"En Bref !"__, a pour sujet (au choix de l'élève) :
 
-- un point particulier à détailler, sur le dernier thème abordé
-- une actualité
-- un sujet en marge des thèmes actuels, permettant d'approfondir nos connaissances
+- un point particulier à détailler, sur le dernier thème abordé.
+- une actualité.
+- un sujet en marge des thèmes actuels, permettant d'approfondir nos connaissances.
 
 Le sujet ne doit pas être trop général, ni résumer une partie importante du thème. Ce doit être un petit point, bien précis, qu'il convient de détailler et d'approfondir.
 
