@@ -230,13 +230,48 @@
         créer un compteur qui affiche et incrémente une valeur de 1 à chaque clic.</p>
       <button name="button" id="bouton_compteur">Compteur</button>
     
-            
       <h2>4. Sites web de références sur Brython</h2>
 
       <p>Pour maîtriser Brython, je vous conseille...</p>
       <ul>
         <li><a href=https://www.brython.info/static_doc/fr/intro.html>Le site de référence Brython</a></li>
-        <li><a href=https://deusyss.developpez.com/tutoriels/Python/web/brython/>Le site developpez.com</a></li></ul></section>
+        <li><a href=https://deusyss.developpez.com/tutoriels/Python/web/brython/>Le site developpez.com</a></li></ul>
+        
+      <h2>4. Que retenir ?</h2>
+      <h3>A minima...</h3>
+
+      <ul>
+        <li>Brython est un langage de programmation qui permet de rendre une page web 
+          interactive sans savoir programmer en Javascript. Il suffit de connaître Python.</li>
+        <li>Brython se charge de "traduire" notre code Python en un code Javascript, 
+          facilement exécutable par un navigateur web. Il est donc naturellement moins efficace 
+          qu'une programmation directe en Javascript mais, pour la plupart des usages, cette 
+          différence est négligeable.</li>
+          <li>Pour utiliser Brython, il faut donc signaler dans la page HTML où trouver 
+            ce langage puis indiquer que l'on doit éxecuter ce code Brython à l'affichage de 
+            la page web (<code>&lt;body onload="brython()"&gt;</code>).
+          </li>
+          <li>Le code Brython est ensuite inclus entre deux balises 
+            <code>&lt;script&gt;&lt;/script&gt;</code>.</li>
+          <li>On peut ajouter des éléments HTML avec du code Brython.</li>
+          <li>On peut aussi interagir avec ces éléments HTML, en changeant son contenu, 
+            son style, son affichage,...</li>
+      </ul>
+
+      <h3>Au mieux...</h3>
+
+      <ul>
+        <li>Savoir ajouter des éléments HTML avec du code Brython.</li>
+        <li>Savoir sélectionner des éléments HTML avec leur <code>id</code> ou 
+        leur <code>class</code>.</li>
+        <li>Savoir modifier un élément avec Brython</li>
+        <li>L'interactivité d'un bouton implique de créer une fonction qui s'éxecutera 
+          après un clic sur ce bouton.</li>
+        <li>Plus généralement, une fonction peut s'éxecuter après tout événement sur 
+          la page (affichage, clic, menu déroulant, saisie d'un champ de texte, 
+          survol d'un élément,...)</li>
+      </ul>
+    </section>
     <footer>
       <a href=http://creativecommons.org/licenses/by-nc-sa/3.0/fr/>
         <img src=https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png 

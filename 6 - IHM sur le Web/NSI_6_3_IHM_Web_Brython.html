@@ -141,74 +141,109 @@
           <td></td>
           <td></td>
         </tr>
-      </table>
-      <h2>2. Ajouter des éléments dans la page à l'aide de Brython</h2>
-      <ol>
-        <li>Etudier le début du <a href=https://www.brython.info/static_tutorial/fr/index.html>
-          tuto Brython</a> afin de :</li>
+        </table>
+        <h2>2. Ajouter des éléments dans la page à l'aide de Brython</h2>
+        <ol>
+          <li>Etudier le début du <a href=https://www.brython.info/static_tutorial/fr/index.html>
+            tuto Brython</a> afin de :</li>
+          <ul>
+            <li>Repérer les lignes indispensables à ajouter à notre fichier html, 
+              afin de rendre Brython opérationnel.</li>
+            <li>Repérer la syntaxe permettant d'afficher un simple texte sur notre page.</li>
+          </ul> 
+          <li>Mettre en oeuvre cette intégration de Brython et afficher un petit texte, 
+              comme "Hello World !" par exemple.</li>
+          <li>Observer le résultat, puis noter vos remarques dans ce document de cours.</li>
+        </ol>
+        <p><strong>Remarques : </strong></p>
         <ul>
-          <li>Repérer les lignes indispensables à ajouter à notre fichier html, 
-            afin de rendre Brython opérationnel.</li>
-          <li>Repérer la syntaxe permettant d'afficher un simple texte sur notre page.</li>
-        </ul> 
-        <li>Mettre en oeuvre cette intégration de Brython et afficher un petit texte, 
-            comme "Hello World !" par exemple.</li>
-        <li>Observer le résultat, puis noter vos remarques dans ce document de cours.</li>
-      </ol>
-      <p><strong>Remarques : </strong></p>
-      <ul>
-        <li>il n'est pas indispensable de lire le chapitre "Calculatrice"</li>
-        <li>comme on l'a vu, le script Brython s'exécute APRES l'affichage de la page HTML. 
-          Cela complique un peu l'organisation du contenu de la page. C'est pourquoi, 
-        je vous conseille de :</li>
-        <ul>
-          <li>Soit créer / modifier l'ensemble de votre contenu par Brython.</li>
-          <li>Soit créer votre contenu en HTML, puis le modifier au besoin 
-            avec Brython. Il me semble que cette deuxième solution est plus simple.
-          </li>
+          <li>il n'est pas indispensable de lire le chapitre "Calculatrice"</li>
+          <li>comme on l'a vu, le script Brython s'exécute APRES l'affichage de la page HTML. 
+            Cela complique un peu l'organisation du contenu de la page. C'est pourquoi, 
+          je vous conseille de :</li>
+          <ul>
+            <li>Soit créer / modifier l'ensemble de votre contenu par Brython.</li>
+            <li>Soit créer votre contenu en HTML, puis le modifier au besoin 
+              avec Brython. Il me semble que cette deuxième solution est plus simple.
+            </li>
+          </ul>
         </ul>
-      </ul>
 
-      <h2>3. Interagir avec la page web grâce à Brython</h2>
+        <h2>3. Interagir avec la page web grâce à Brython</h2>
 
-      <p>De nombreuses interactions sont envisageables avec Brython mais nous nous 
-        limiterons à celle essentielle pour notre mini-projet : la gestion du clic 
-        de souris pour modifier du contenu.</p>
-      <p>Voici donc plusieurs boutons :</p>
-      <button name="button">Bouton minimal</button>
-      <button name="button" id="bouton2">Bouton identifiable</button>
-      <button name="button" id="bouton3" value=5>Bouton identifiable avec valeur</button>
-      <p><strong>Remarques : </strong></p>
-      <ul>
-        <li>on a ajouté un attribut <EM>id</EM> aux deux derniers boutons pour les rendre identifiables.</li>
-        <li>ainsi, le sélecteur CSS <EM>#bouton1</EM> permettra de sélectionner le bouton du milieu.</li>
-      </ul>
-      <p>A ce stade, ces boutons sont peu utiles. A vous de rendre certains boutons  
-        interactifs en vous inspirant de <a href=https://www.brython.info/demo.html?lang=fr#>
-          la démo "change the text of an element"</a> (cliquer sur le menu gauche).</p>
-      <p>L'objectif est de créer un paragraphe ci-dessous, en lui ajoutant un attribut 
-        <EM>id="texte_ephemere"</EM> 
-        pour l'identifier. Noter un texte minimaliste dans ce paragraphe puis faire en sorte 
-        que le clic sur le bouton1 modifie le contenu de ce paragraphe (changement de texte).</p>
+        <p>De nombreuses interactions sont envisageables avec Brython mais nous nous 
+          limiterons à celle essentielle pour notre mini-projet : la gestion du clic 
+          de souris pour modifier du contenu.</p>
+        <p>Voici donc plusieurs boutons :</p>
+        <button name="button">Bouton minimal</button>
+        <button name="button" id="bouton2">Bouton identifiable</button>
+        <button name="button" id="bouton3" value=5>Bouton identifiable avec valeur</button>
+        <p><strong>Remarques : </strong></p>
+        <ul>
+          <li>on a ajouté un attribut <EM>id</EM> aux deux derniers boutons pour les rendre identifiables.</li>
+          <li>ainsi, le sélecteur CSS <EM>#bouton1</EM> permettra de sélectionner le bouton du milieu.</li>
+        </ul>
+        <p>A ce stade, ces boutons sont peu utiles. A vous de rendre certains boutons  
+          interactifs en vous inspirant de <a href=https://www.brython.info/demo.html?lang=fr#>
+            la démo "change the text of an element"</a> (cliquer sur le menu gauche).</p>
+        <p>L'objectif est de créer un paragraphe ci-dessous, en lui ajoutant un attribut 
+          <EM>id="texte_ephemere"</EM> 
+          pour l'identifier. Noter un texte minimaliste dans ce paragraphe puis faire en sorte 
+          que le clic sur le bouton1 modifie le contenu de ce paragraphe (changement de texte).</p>
 
-        <p></p>
+          <p></p>
 
-        <p>Maintenant, il faut utiliser la "valeur" du bouton2 pour afficher un texte lié à
-         cette "valeur" : au clic sur le bouton2, le paragraphe précédent (texte_ephemere) 
-         doit afficher "La valeur du bouton 2 est 5", puisque 5 est la valeur récupérée dans 
-         l'attribut <EM>value</EM> du bouton2.</p>
-      <p><strong>Remarque (aide) : </strong>l'attribut <EM>target</EM>, appliqué à l'évenement 
-        <EM>ev</EM> permet d'accéder au bouton cliqué. Pour atteindre la valeur de son attribut 
-        <EM>value</EM>, il suffit donc de saisir <EM>ev.target.value</EM></p>
-      <p><strong>Approfondissement : </strong>
-        créer un compteur qui affiche et incrémente une valeur de 1 à chaque clic.</p>
-        
+          <p>Maintenant, il faut utiliser la "valeur" du bouton2 pour afficher un texte lié à
+          cette "valeur" : au clic sur le bouton2, le paragraphe précédent (texte_ephemere) 
+          doit afficher "La valeur du bouton 2 est 5", puisque 5 est la valeur récupérée dans 
+          l'attribut <EM>value</EM> du bouton2.</p>
+        <p><strong>Remarque (aide) : </strong>l'attribut <EM>target</EM>, appliqué à l'évenement 
+          <EM>ev</EM> permet d'accéder au bouton cliqué. Pour atteindre la valeur de son attribut 
+          <EM>value</EM>, il suffit donc de saisir <EM>ev.target.value</EM></p>
+        <p><strong>Approfondissement : </strong>
+          créer un compteur qui affiche et incrémente une valeur de 1 à chaque clic.</p>
+          
         <h2>4. Sites web de références sur Brython</h2>
 
         <p>Pour maîtriser Brython, je vous conseille...</p>
         <ul>
           <li><a href=https://www.brython.info/static_doc/fr/intro.html>Le site de référence Brython</a></li>
           <li><a href=https://deusyss.developpez.com/tutoriels/Python/web/brython/>Le site developpez.com</a></li></ul>
+
+        <h2>4. Que retenir ?</h2>
+        <h3>A minima...</h3>
+  
+        <ul>
+          <li>Brython est un langage de programmation qui permet de rendre une page web 
+            interactive sans savoir programmer en Javascript. Il suffit de connaître Python.</li>
+          <li>Brython se charge de "traduire" notre code Python en un code Javascript, 
+            facilement exécutable par un navigateur web. Il est donc naturellement moins efficace 
+            qu'une programmation directe en Javascript mais, pour la plupart des usages, cette 
+            différence est négligeable.</li>
+            <li>Pour utiliser Brython, il faut donc signaler dans la page HTML où trouver 
+              ce langage puis indiquer que l'on doit éxecuter ce code Brython à l'affichage de 
+              la page web (<code>&lt;body onload="brython()"&gt;</code>).
+            </li>
+            <li>Le code Brython est ensuite inclus entre deux balises 
+              <code>&lt;script&gt;&lt;/script&gt;</code>.</li>
+            <li>On peut ajouter des éléments HTML avec du code Brython.</li>
+            <li>On peut aussi interagir avec ces éléments HTML, en changeant son contenu, 
+              son style, son affichage,...</li>
+        </ul>
+  
+        <h3>Au mieux...</h3>
+  
+        <ul>
+          <li>Savoir ajouter des éléments HTML avec du code Brython.</li>
+          <li>Savoir sélectionner des éléments HTML avec leur <code>id</code> ou 
+          leur <code>class</code>.</li>
+          <li>Savoir modifier un élément avec Brython</li>
+          <li>L'interactivité d'un bouton implique de créer une fonction qui s'éxecutera 
+            après un clic sur ce bouton.</li>
+          <li>Plus généralement, une fonction peut s'éxecuter après tout événement sur 
+            la page (affichage, clic, menu déroulant, saisie d'un champ de texte, 
+            survol d'un élément,...)</li>
+        </ul>
       </section>
     <footer>
       <a href=http://creativecommons.org/licenses/by-nc-sa/3.0/fr/>
