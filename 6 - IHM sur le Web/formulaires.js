@@ -30,13 +30,13 @@ function choix() {
     if (nsi && ma && svt) {
     	aff = "Tu ne peux conserver que deux spécialités !"
     } else {
-	    if (nsi == true) {
+	    if (nsi) {
 		aff = aff + " Tu conserves NSI. Bravo bon choix !</br>";
 	    }
-	    if (ma == true) {
+	    if (ma) {
 		aff = aff + " Tu conserves les Maths</br>";
 	    }
-	    if (svt == true) {
+	    if (svt) {
 		aff = aff + " Tu conserves les SVT";
 	    }
 	}
