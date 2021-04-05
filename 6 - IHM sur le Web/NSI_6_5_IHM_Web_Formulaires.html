@@ -71,14 +71,23 @@
           Humain <input type="radio" name="categorie" value="hu">
           Extraterrestre <input type="radio" name="categorie" value="ex">
         </p>
-        <p>Préférences pour le petit-déjeuner : 
-          Jus de fruit <input type="checkbox" name="jus" value="jus">
-          Tartines beure / confiture <input type="checkbox" name="beurre" value="beurre">
-          Tartines limaces / uranium<input type="checkbox" name="limaces" value="limaces">
-        </p>
-        <p><label for="satisfaction">Niveau de satisfaction :</label>
+        <p>Préférences pour le petit-déjeuner : </p>
+        <div>
+          <input type="checkbox" id="jus" name="jus" value="jus">
+          <label for="jus">Jus de fruit</label>
+        </div>
+        <div>
+          <input type="checkbox" id="beurre" name="beurre" value="beurre">
+          <label for="beurre">Tartines beure / confiture</label>
+        </div>
+        <div>
+          <input type="checkbox" id="limaces" name="limaces" value="limaces" checked>
+          <label for="limaces">Tartines limaces / uranium</label>
+        </div>
+        <div>
+          <label for="satisfaction">Niveau de satisfaction :</label>
           <input type="range" id="satisfaction" name="curseur" min="0" max="11" value="3">
-        </p>
+        </div>
         <p><input type="button" value="Bouton"></p>
         <p><input type="submit" value="Envoyer"></p>
       </form>
@@ -98,9 +107,20 @@
         Lorsqu'on enfonçait un bouton, un mécanisme ressortait le bouton qui avait été enfoncé 
         auparavant : on ne pouvait sélectionner qu'un seul bouton à la fois.</li>
       <li>Il est possible de rendre un champ de réponse obligatoire en ajoutant l'attribut 
-          <code>required</code> dans la balise <code>&ltinput&gt</code>.</li>
-      <li>Plutôt que d'utiliser une balise <code>&ltinput&gt</code> de type <code>bouton</code>, 
-        il existe une balise spécifique qui permet de faire la même chose : <code>&ltbutton&gt</code>. 
+          <code>required</code> dans la balise <code>&lt;input&gt;</code>.</li>
+      <li>Il est possible de précocher une case avec l'attribut <code>checked</code>.</li>
+      <li>
+        L'élément HTML <code>&lt;div&gt;</code> (qui signifie division du document) est un conteneur 
+        générique qui permet d'organiser le contenu sans représenter rien de particulier. 
+        Il peut être utilisé afin de grouper d'autres éléments pour leur appliquer un style 
+        (en utilisant les attributs <code>class</code> ou <code>id</code>) ou parce qu'ils 
+        partagent des attributs aux valeurs communes. Il doit uniquement être utilisé lorsqu'aucun 
+        autre élément sémantique (par exemple <code>&lt;article&gt;</code> ou 
+        <code>&lt;nav&gt;</code>) n'est approprié.
+      </li>
+      <li>
+        Plutôt que d'utiliser une balise <code>&lt;input&gt;</code> de type <code>bouton</code>, 
+        il existe une balise spécifique qui permet de faire la même chose : <code>&lt;button&gt;</code>. 
         Le code suivant peut donc remplacer le code utilisé précédemment pour créer un bouton. On constate, 
         ci-après que le rendu est identique avec ces deux codes différents :
         <input type="button" value="Bouton">  <button type="button">Bouton</button></p>
@@ -110,7 +130,7 @@
       <h3>Les balises form et select</h3>
 
       <p>Un autre élément important interaction est la liste déroulante générée par la balise 
-        <code>&ltselect&gt</code>.</p>
+        <code>&lt;select&gt;</code>.</p>
 
       <h4>En voici quelques exemples ci-dessous :</h4>
 
@@ -121,7 +141,7 @@
             <option value="poisson">Anchoix marinés</option>
             </select>
       </form>
-      <p>La balise <code>&ltselect&gt</code> autorise un seul choix par défaut, mais il peut être précisé
+      <p>La balise <code>&lt;select&gt;</code> autorise un seul choix par défaut, mais il peut être précisé
         <code>multiple</code> dans la balise pour permettre de valider plusieurs choix simultanés. 
         Dans ce cas les valeurs séléctionnées sont traitées comme un tableau.</p>
       <form>
@@ -134,7 +154,7 @@
       <p>Ce dernier formulaire avec sélecteur n'est pas élégant, mais il permet de sélectionner 
         plusieurs choix en cliquant tout en laissant appuyée la touche "Ctrl". 
         De plus, il est possible de sélectionner par défaut un (ou plusieurs éléments) en ajoutant 
-        l'attribut <code>selected</code> à la balise <code>&ltoption&gt</code>. Voir ci-dessous.</p>
+        l'attribut <code>selected</code> à la balise <code>&lt;option&gt;</code>. Voir ci-dessous.</p>
       <form>
         <select name="menu[]" multiple>
           <option value="volaille">Poulets frites</option>
@@ -149,15 +169,15 @@
       <img src="Exo_Formulaire_HTML.png" width="30%">
       <p>Pour cela :
         <ul>
-          <li>vous utiliserez les balises <code>&ltinput&gt</code> et <code>&ltselect&gt</code>.</li>
-          <li>vous préciserez le <code>type</code> lors de l'utilisation d'une balise <code>input</code>.</li>
+          <li>vous utiliserez les balises <code>&lt;input&gt;</code> et <code>&lt;select&gt;</code>.</li>
+          <li>vous préciserez le <code>type</code> lors de l'utilisation d'une balise <code>&lt;input&gt;</code>.</li>
           <li>vous préciserez le <code>name</code> dans chacun des cas (l'attribut <code>name</code> 
             sera utilisé plus tard pour retrouver la valeur d'un élément d'un formulaire).</li>
-          <li>vous proposerez deux types de carte bancaire possibles : 'Visa' et 'Bleue' 
+          <li>vous proposerez deux types de carte bancaire possibles : "Visa" et "Bleue" 
             (carte par défaut).</li>
         </ul>
         <p><b>Remarque :</b> à ce stade, sans Javascript ou Brython, il est normal que votre bouton 
-          'Valider le paiement' soit sans effet.</p>
+          "Valider le paiement" soit sans effet.</p>
       </p>
 
       <h2>3. Rendre les formulaires interactifs avec Javascript et un simple navigateur</h2>
@@ -181,9 +201,19 @@
       </form>
       <p>Observer le code source de ce formulaire, en particulier 
         les attributs de la balise <code>select</code>.</p>
-      <p>On remarque que l'attribut <code>onchange</code> a pour valeur le nom d'une fonction : 
-      <code>selected()</code>. Cette fonction est une fonction Javascript qu'il reste à écrire.</p>
-      <p>Quelques instructions Javascript sont à découvrir pour comprendre la suite...</p>
+      <p><b>Remarques :</b></p>
+      <ul>
+        <li>L'élément HTML <code>&lt;span&gt;</code> est un conteneur générique en ligne (inline) 
+          pour les contenus phrasés. Il ne représente rien de particulier. 
+          Il doit uniquement être utilisé lorsqu'aucun autre élément sémantique n'est approprié. 
+          <code>&lt;span&gt;</code> est très proche de l'élément <code>&lt;div&gt;</code>, 
+          mais l'élément <code>&lt;div&gt;</code> est un élément de bloc (avec retour à la ligne), 
+          alors que <code>&lt;span&gt;</code> est un élément en ligne.</li>
+        <li>On remarque que l'attribut <code>onchange</code> a pour valeur le nom d'une fonction : 
+          <code>selected()</code>. <b>Cette fonction est une fonction Javascript qu'il reste 
+            à écrire</b>.</li>
+      </ul>
+      <p>Quelques <b>instructions Javascript</b> sont à découvrir pour comprendre la suite...</p>
       <ul>
         <li><code>getElementById('id')</code> est une méthode qui récupère 
           l'élément de la page identifié par 'id'.</li>
@@ -197,8 +227,8 @@
         <li><code>innerHTML</code> est une variable qui contient le 
           contenu HTML d'un élément d'une page html. On peut le récupérer mais aussi le changer.</li>
           <ul><li>Par exemple <code>document.getElementById('horloge').innerHTML = "Coucou"</code> 
-            intégre du contenu html (ici, le texte "Coucou") à l'emplacement de la page 
-            identifié par l'id nommé 'horloge'.</li></ul>
+            intègre du contenu html (ici, le texte "Coucou") à l'emplacement de la page 
+            identifiée par l'id nommé 'horloge'.</li></ul>
       </ul>
       <p>Voici, ci-dessous, une correction possible pour la fonction <code>selected()</code> 
       qui permettra d'afficher le choix de l'utilisateur dans le contenu HTML de la page.</p>
