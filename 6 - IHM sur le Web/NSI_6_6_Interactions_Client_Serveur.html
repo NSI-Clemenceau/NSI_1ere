@@ -33,6 +33,10 @@
       .double_tab {
         margin-left: 2em;
       }
+      .pad {
+        display: block;
+        padding-left: 3em;
+      }
     </style>
   </head>
 
@@ -45,7 +49,7 @@
       <p><b>Remarque :</b> n'hésitez pas à appliquer votre fichier CSS à cette page HTML 
       pour la rendre plus attrayante.</p>
       
-      <h2>Interactions Client - Serveur</h2>
+      <h2>1. Interactions Client - Serveur</h2>
 
       <p>Le schéma client-serveur désigne un mode de communication entre programmes : 
         l'un est qualifié de "client", c'est celui qui envoie des requêtes. L'autre est appelé 
@@ -107,7 +111,7 @@
         <li>Fermeture de la connexion ou demande de réutilisation pour les requêtes suivantes.</li>
       </ul>
 
-      <h2>Les interactions client-serveur pour l'envoi de formulaires</h2>
+      <h2>2. Les interactions client-serveur pour l'envoi de formulaires</h2>
       <h3>Premières observations de requêtes HTTP sur des pages web</h3>
 
       <p>Effectuer les actions suivantes :</p>
@@ -223,7 +227,7 @@
         </li>
       </ul>
       </ol>
-      <h2>Formulaire et passage de paramètres par la méthode GET ou la méthode POST</h2>
+      <h2>3. Formulaire et passage de paramètres par la méthode GET ou la méthode POST</h2>
       
       <h3>Méthode GET</h3>
       
@@ -272,7 +276,7 @@
           <ul><li>Quels sont les deux changements par rapport au code de <code>formulaire-get.html</code> ?</li></ul></li>
       </ul>
 
-      <h2>L'interactivité Client - Serveur par protocole HTTP, le résumé</h2>
+      <h2>4. L'interactivité Client - Serveur par protocole HTTP, le résumé</h2>
       <h3>Les méthodes GET ou POST des formulaires HTML</h3>
       <p>En HTML, un formulaire est un élément qui permet de transmettre des informations à
         un serveur Web. Il est composé d’un élément <code>&lt;form
@@ -345,10 +349,117 @@
         <a href=https://developer.mozilla.org/fr/docs/Web/HTTP/Methods alt="Méthodes HTTP">
           au site suivant</a>.</p>
 
-      <h2>Le HTTPS en BD</h2>
+      <h3>Le langage PHP pour traiter les données du côté Serveur</h3>
+
+      <p>Voici un autre exemple de formulaire :</p>
+
+      <form action="ma-page-de-traitement" method="POST">
+        <div>
+            <label for="name">Nom :
+            <input type="text" id="name" name="user_name">
+        </div><br/>
+        <div>
+            <label for="mail">Courriel :
+            <input type="email" id="mail" name="user_mail">
+        </div><br/>
+        <div class="button">
+            <button type="submit">Envoyer le message
+        </div>
+      </form>
+
+      <p>Dans un premier temps, observer le code source de ce formulaire et en particulier 
+        les attributs de la balise <code>&lt;form&gt;</code>, puis remplir le formulaire.</p>
+      <p>Comme vous l'avez constaté ce formulaire n'aboutit pas car "<code>ma-page-de-traitement.php</code>" 
+        n'existe pas. Nous allons voir comment récupérer les informations du formulaire 
+        grâce au langage PHP. 
+        Toutefois, l'installation d'un serveur PHP n'étant pas exigible en classe de première, 
+        nous en resterons à une théorie assez superficielle.</p>
+
+      <p><b>Wikipédia : </b>Hypertext Preprocessor, plus connu sous son sigle PHP, est un langage de 
+        programmation libre, principalement utilisé pour produire des pages Web dynamiques via un 
+        serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprété 
+        de façon locale. PHP a permis de créer un grand nombre de sites web célèbres, comme 
+        Facebook, Wikipédia,...</p>
+
+      <p>Voici un contenu possible pour le fichier <code>ma-page-de-traitement.php</code> :</p>
+      <code class=pad>
+        &lt;?php #indique le début d'un script php.<br/><br/>
+
+        $html=&lt;&lt;&lt;HTML #une variable en PHP sera toujours préfixé avec un $. <br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        # le &lt;&lt;&lt;HTML indique que la suite 
+        contient du HTML jusqu'au HTML;<br/><br/>
+        &lt;!doctype html><br/>
+        &lt;html lang="fr"><br/>
+          &emsp;&lt;head><br/>
+            &emsp;&emsp;&lt;meta charset="utf-8"><br/>
+            &emsp;&emsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><br/>
+            &emsp;&emsp;&lt;title>formulaire réponse<br/>
+          &emsp;&lt;/head><br/>
+          &emsp;&lt;body><br/>
+            &emsp;&emsp;&lt;p>Ton nom est : $_GET[user_name]     #ici on accède à la valeur enregistrée 
+              avec la clé  user_name<br/>
+            &emsp;&emsp;&lt;p>Ton email est : $_GET[user_mail]<br/>
+          &emsp;&lt;/body><br/>
+        &lt;/html><br/><br/>
+        HTML;           #fin de la ligne de code PHP contenant du HTML<br/>
+        echo $html;     #echo sert à afficher la variable qui suit. On affiche ici la variable html.<br/>
+      </code>
+
+      <p>En analysant ce code, on remarque que :</p>
+      <ul>
+        <li>Les informations envoyées par la méthode <code>GET</code> sont automatiquement stockées 
+          dans une variable <code>$_GET</code>. </li>
+        <li>La structure de cette variable est un tableau associatif (un peu comme un dictionnaire) 
+          où les clés sont les valeurs des attributs <code>name</code>, définis dans les balises 
+          <code>&lt;input&gt;</code>.</li>
+        <li>Le langage PHP utilise les variables <code>$_GET[user_name]</code> et 
+        <code>$_GET[user_mail]</code> pour construire la page web dynamique que renvoit le 
+        serveur au client.</li>
+      </ul>
+      <h2>5. Le HTTPS en BD</h2>
 
       <a href=https://blog.octo.com/bd-le-https/ alt="Le HTTP expliqué en BD, Source : https://blog.octo.com/bd-le-https/">
         <img src=HTTPS.png alt="Le HTTP expliqué en BD, Source : https://blog.octo.com/bd-le-https/"></a>
+    
+      <h2>6. Que retenir ?</h2>
+      <h3>A minima...</h3>
+
+      <ul>
+        <li>Une page web a pour vocation d'être consultable à distance. Pour cela, un client 
+          (le navigateur web de l'utilisateur) émet une requête auprès du serveur qui possède 
+          les données demandées.</li>
+        <li>Parfois, le serveur peut renvoyer une page web personnalisée, crée à partir 
+          de données envoyées par le client. C'est le cas lorsqu'on remplit un formulaire.</li>
+        <li>Le client utilise une requête HTTP (ou HTTPS si elle est chiffrée) pour 
+          demander une page web au serveur. Il peut ajouter des données à cette requête, comme 
+          les réponses à un formulaire.</li>
+        <lil>Le serveur répond au client en lui envoyant la page web demandée. Cette page 
+          peut être "statique" (la même pour tous) ou dynamique si elle est personnalisée par 
+          le serveur.</lil>
+      </ul>
+
+      <h3>Au mieux...</h3>
+
+      <ul>
+        <li>La chaîne de communication Client - Serveur comprend les étapes suivantes :</li>
+        <ul>
+          <li>Le client envoie une requête HTTP (de type GET ou POST) au serveur.</li>
+          <li>Le serveur reçoit cette demande et vérifie s'il reçoit des données complémentaires...</li>
+          <ul>
+            <li>...dans l'URL (après le caractère ?) si la méthode GET est utilisée</li>
+            <li>...dans le corps de la requête si la méthode POST est utilisée.</li>
+          </ul>
+          <li>S'il reçoit des données, le serveur peut les traiter. Ces données peuvent servir 
+            à créer la page web qu'il va renvoyer.</li>
+          <li>Le serveur envoie en réponse la page web demandée au client.</li>
+          <li>Le client reçoit la réponse et affiche la page web incluse dans cette réponse.</li>
+        </ul>
+        <li>La méthode GET est à privilégier si on veut conserver dans l'URL les données à 
+          transmettre (par exemple pour garder une recherche Qwant dans les favoris).</li>
+        <li>La méthode POST est à privilégier si on veut garder confidentielles les données 
+          à transmettre, à condition toutefois que la requête soit chiffrée (Protocole HTTPS).</li>
+      </ul>
     </section>
     <footer>
       <a href=http://creativecommons.org/licenses/by-nc-sa/3.0/fr/>
