@@ -23,22 +23,26 @@ function selection() {
 
 function choix() {
     const nsi = document.getElementById("nsi").checked;
-    const ma = document.getElementById("ma").checked;
+    const math = document.getElementById("ma").checked;
     const svt = document.getElementById("svt").checked;
     console.log(nsi);
-    aff = ""
-    if (nsi && ma && svt) {
-    	aff = "Tu ne peux conserver que deux spécialités !"
+    let affichage = ""
+    if ((nsi && !math && !svt) || (svt && !nsi && !math) || (math && !nsi && !svt)) {
+        affichage = "Tu dois choisir deux spécialités !"
     } else {
-	    if (nsi) {
-		aff = aff + " Tu conserves NSI. Bravo bon choix !</br>";
-	    }
-	    if (ma) {
-		aff = aff + " Tu conserves les Maths</br>";
-	    }
-	    if (svt) {
-		aff = aff + " Tu conserves les SVT";
-	    }
+        if (nsi && math && svt) {
+            affichage = "Tu ne peux conserver que deux spécialités !"
+        } else {
+            if (nsi) {
+                affichage = " Tu conserves NSI. Bravo bon choix !</br>";
+            }
+            if (math) {
+                affichage = affichage + " Tu conserves les Maths</br>";
+            }
+            if (svt) {
+                affichage = affichage + " Tu conserves les SVT";
+            }
+        }
 	}
-    document.getElementById('choix_spe').innerHTML = aff
+    document.getElementById('choix_spe').innerHTML = affichage
 }

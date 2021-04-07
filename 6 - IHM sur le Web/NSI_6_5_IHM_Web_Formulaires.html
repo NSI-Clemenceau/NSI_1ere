@@ -63,13 +63,15 @@
       <p>Un formulaire HTML est indiqué par la balise <code>&ltform&gt</code> et contient notamment 
         des champs de saisie limités par des balises <code>&ltinput&gt</code>.</p>
       <p>Les attributs <code>value</code> seront des variables utilisées par JavaScript ou Brython.</p>
+      
       <h4>En voici quelques exemples ci-dessous :</h4>
+
       <form>
         <p>Login : <input type="text" name="login" required></p>
         <p>Mot de passe : <input type="password" name="pass" required></p>
         <p>Catégorie :
           Humain <input type="radio" name="categorie" value="hu">
-          Extraterrestre <input type="radio" name="categorie" value="ex">
+          Extraterrestre <input type="radio" name="categorie" value="ex" checked>
         </p>
         <p>Préférences pour le petit-déjeuner : </p>
         <div>
@@ -237,7 +239,9 @@
         &nbsp;   const monChoix = selecteur[selecteur.selectedIndex];<br/>
         &nbsp;   document.getElementById('nat').innerHTML = monChoix.text;<br/>
         }</code>
-      <h4>Exercice :</h4S>
+
+      <h4>Exercice :</h4>
+
       <ul>
         <li>Intégrer ce code Javascript à la page pour rendre le dernier formulaire interactif.</li>
         <li>Mieux encore, créer un fichier séparé <code>formulaires.js</code> pour votre script 

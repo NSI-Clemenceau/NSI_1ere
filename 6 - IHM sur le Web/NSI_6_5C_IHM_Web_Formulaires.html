@@ -64,14 +64,16 @@
       <p>Un formulaire HTML est indiqué par la balise <code>&ltform&gt</code> et contient notamment 
         des champs de saisie limités par des balises <code>&ltinput&gt</code>.</p>
       <p>Les attributs <code>value</code> seront des variables utilisées par JavaScript ou Brython.</p>
+      
       <h4>En voici quelques exemples ci-dessous :</h4>
+
       <form>
         <p>Login : <input type="text" name="login" required></p>
         <p>Mot de passe : <input type="password" name="pass" required></p>
         <p>
           Catégorie :
           Humain <input type="radio" name="categorie" value="hu">
-          Extraterrestre <input type="radio" name="categorie" value="ex">
+          Extraterrestre <input type="radio" name="categorie" value="ex" checked>
         </p>
         <p>Préférences pour le petit-déjeuner : </p>
         <div>
@@ -101,6 +103,7 @@
           https://www.scriptol.fr/html5/formulaire.php">ce site web</a>.</p>
       
       <h4>Remarques :</h4>
+
       <ul>
       <li>Pour que les boutons soient mutuellement exclusifs, ils doivent avoir le même attribut
           <code>name</code> : dans l'exemple de boutons radio précédent, on a précisé <code>name="categorie"</code>.</li>
@@ -138,10 +141,10 @@
 
       <form>
         <select name="menu">
-            <option value="volaille">Poulets frites</option>
-            <option value="veggie">Riz et lentilles</option>
-            <option value="poisson">Anchoix marinés</option>
-            </select>
+          <option value="volaille">Poulets frites</option>
+          <option value="veggie">Riz et lentilles</option>
+          <option value="poisson">Anchoix marinés</option>
+        </select>
       </form>
       <p>La balise <code>&lt;select&gt;</code> autorise un seul choix par défaut, mais il peut être précisé
         <code>multiple</code> dans la balise pour permettre de valider plusieurs choix simultanés. 
@@ -264,7 +267,9 @@
         &nbsp;   const monChoix = selecteur[selecteur.selectedIndex];<br/>
         &nbsp;   document.getElementById('nat').innerHTML = monChoix.text;<br/>
         }</code>
+
       <h4>Exercice :</h4>
+
       <ul>
         <li>Intégrer ce code Javascript à la page pour rendre le dernier formulaire interactif.</li>
         <li>Mieux encore, créer un fichier séparé <code>formulaires.js</code> pour votre script 
