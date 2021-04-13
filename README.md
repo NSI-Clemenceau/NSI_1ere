@@ -162,13 +162,13 @@ Voici une progression possible :
 |6|NSI_6_4_IHM_Web_Javascript|
 |6|NSI_6_4C_IHM_Web_Javascript|
 |6|NSI_6_5_IHM_Web_Formulaires|
-|🚜6|NSI_6_5C_IHM_Web_Formulaires|
-|6|NSI_6_6_Interactions_Client_Serveur|
-|🏎6|NSI_6_6C_Interactions_Client_Serveur|
+|6|NSI_6_5C_IHM_Web_Formulaires|
+|🚜6|NSI_6_6_Interactions_Client_Serveur|
+|6|NSI_6_6C_Interactions_Client_Serveur|
 |||
-|🚀7|NSI_7_1_Reseau_et_Protocoles_de_communication|
+|🏎7|NSI_7_1_Reseau_et_Protocoles_de_communication|
 |7|NSI_7_2E_Reseau_et_Protocoles_de_communication|
-|7|NSI_7_2EC_Reseau_et_Protocoles_de_communication|
+|🚀7|NSI_7_2EC_Reseau_et_Protocoles_de_communication|
 |7|NSI_7_3_Modeliser_un_Reseau|
 |||
 ||... "saut temporel", à compléter plus tard...|
