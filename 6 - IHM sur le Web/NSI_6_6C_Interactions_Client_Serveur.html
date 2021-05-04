@@ -108,7 +108,7 @@
         <li>Le client envoie une requête HTTP.</li>
         <li>Le serveur retourne une réponse HTTP, lue par le client. 
           S’il y a un contenu, il est affiché par le navigateur du client.</li>
-        <li>Fermeture de la connexion ou demande de réutilisation pour les requêtes suivantes.</li>
+        <li>Fermeture de la connexion TCP ou demande de réutilisation pour les requêtes suivantes.</li>
       </ul>
 
       <h2>2. Les interactions client-serveur pour l'envoi de formulaires</h2>
@@ -157,7 +157,7 @@
               par le protocole TLS (Voir BD en fin de cette page web).</li></ul>
         <li><a href="http://frederic-junier.org/NSI/Sandbox/index.html">http://frederic-junier.org/NSI/Sandbox/index.html</a>. 
           <ul><li>Quel est le code d’état de la réponse ? Explication ?</li></ul> </li>
-          <ul><li>404 : La page n'est pas trouvé car l'URL est innexacte (majuscule à Sandbox).</li></ul>
+          <ul><li>404 : La page n'est pas trouvé car l'URL est inexacte (majuscule à Sandbox).</li></ul>
         <li><a href="http://frederic-junier.org/NSI/interdit">http://frederic-junier.org/NSI/interdit</a>. 
           <ul><li>Quel est le code d’état de la réponse ? Explication ?</li></ul> </li>
           <ul><li>403 : la page a bien été trouvée par le serveur mais le client n'a pas les droits 
@@ -178,7 +178,13 @@
           <th>Inspecteur de Brave</th>
         </tr>
       </table>
-      
+      <ul>
+        <li>L'essentiel des informations est commune (type, méthode, version et état de la requête, 
+          entête de la requête et de la réponse à cette requête,...).</li>
+        <li>On peut toutefois remarquer une petite finesse du navigateur Brave qui n'utilise pas 
+          "User-Agent" pour donner des informations personnelles sur les logiciels utilisés pour 
+          cette requête.</li>
+      </ul>
       <h3>Passage de paramètres dans une URL</h3>
 
       <p>Ouvrir un navigateur Web.</p>
@@ -254,10 +260,10 @@
       <ul>
         <li>Cliquer sur le bouton <code>Envoyer</code>.</li>
           <ul><li>Que se passe-t-il ?</li>
-            <ul><li>Une page web affichant "Bonjour".</li></ul></ul>
+            <ul><li>Une page web affichant "Bonjour Alan Turing".</li></ul></ul>
         <li>Rafraîchir la page avec <code>F5</code>.
           <ul><li>Que se passe-t-il ?</li>
-          <ul><li>Une page web affichant "Bonjour Alan Turing".</li></ul></ul>
+          <ul><li>Toujours la même page web affichant "Bonjour Alan Turing".</li></ul></ul>
         <li>Changer les valeurs des champs <code>Prénom</code> et <code>Nom</code> du formulaire
           puis cliquer sur le bouton <code>Envoyer</code>.</li>
           <ul><li>Que se passe-t-il ?</li>
@@ -289,7 +295,7 @@
       <ul>
         <li>Cliquer sur le bouton <code>Envoyer</code>. </li>
           <ul><li>Que se passe-t-il ?</li>
-          <ul><li>La même choses que précédemment : une page web affichant "Bonjour".</li></ul></ul>
+          <ul><li>La même choses que précédemment : une page web affichant "Bonjour Alan Turing".</li></ul></ul>
         <li>Changer les valeurs des champs <code>Prénom</code> et <code>Nom</code> du formulaire
           puis cliquer sur le bouton <code>Envoyer</code>. </li>
           <ul><li>Que se passe-t-il ?</li>
@@ -343,7 +349,7 @@
           <li>avec la méthode GET, les données du formulaire sont assemblées dans une chaîne de
             paires <code>nom=valeur</code> séparées par le symbole <code>&amp;</code> qui est ajoutée à
             la fin de l’URL après le délimiteur <code>?</code>.</li>
-          <li>avec la méthode POST les données du formulaire sont transmises toujours dans le corps
+          <li>avec la méthode POST les données du formulaire sont transmises dans le corps
           de la requête. Les données n’apparaissent donc pas dans l’URL.</li>
         </ul>
         </li>
@@ -353,31 +359,33 @@
       <a href="https://developer.mozilla.org/fr/docs/Web/HTTP/M%C3%A9thode/GET">GET</a></h3>
       
       <ul>
+        <li>Comme son nom l'indique, la méthode GET est uniquement utilisée pour demander 
+          une ressource, 
+          elle ne modifie pas l’état du serveur. Un exemple classique d’utilisation est
+      la formulation d’une requête à l’aide du formulaire d’un moteur de recherche.
+      L’URL générée peut être utilisée plusieurs fois et conservée comme favori.</li>
         <li>Toutes les informations sont transmises en clair dans l’URL. Celle-ci est limitée 
           en taille donc la méthode GET
            ne peut pas être utilisée pour transmettre des informations trop longues.</li>
+        <li>Elle utilise le codage ASCII, ce qui limite la complexité des données transmises.</li>
         <li>Une requête GET est constituée uniquement d’un entête, elle n’a pas de corps.</li>
-        <li>Elle ne modifie pas l’état du serveur, elle est utilisée uniquement
-      pour demander une ressource. Un exemple classique d’utilisation est
-      la formulation d’une requête à l’aide du formulaire d’un moteur de recherche.
-      L’URL générée peut être utilisée plusieurs fois et conservée comme marque-page.</li>
       </ul>
       
       <h3>Caractéristiques de la méthode
       <a href="https://developer.mozilla.org/fr/docs/Web/HTTP/M%C3%A9thode/POST">POST</a></h3>
       
       <ul>
-        <li>Les données sont transmises dans le corps de la requête, il n’y a
-      pas de restriction de taille.</li>
-        <li>Les données n’apparaissent pas dans l’URL, néanmoins, si le protocole HTTP est employé sans chiffrement, il suffit 
-      d’intercepter la requête pour accéder aux données en clair.</li>
         <li>Les données envoyées peuvent modifier l’état du serveur. Par
       exemple, les requêtes POST sont utilisées pour les modifications de bases de données sur le
       serveur (achats, réservation, transfert de fichiers …). Par
       conséquent si on veut renvoyer les données d’un formulaire, un
-      message en popup avertit que ce nouvel envoi peut modifier l’état du
-      serveur et par exemple d’enregistrer un nouvel achat s’il s’agit
+      message "popup" avertit que ce nouvel envoi peut modifier l’état du
+      serveur et, par exemple, enregistrer un nouvel achat s’il s’agit
       d’un formulaire de commande.</li>
+      <li>Les données sont transmises dans le corps de la requête, il n’y a
+        pas de restriction de taille ni de type de données.</li>
+      <li>Les données n’apparaissent pas dans l’URL, néanmoins, si le protocole HTTP est employé sans chiffrement, il suffit 
+        d’intercepter la requête pour accéder aux données en clair.</li>
       </ul>
 
       <h3>Autres méthodes HTTP</h3>
@@ -468,7 +476,7 @@
         <li>Une page web a pour vocation d'être consultable à distance. Pour cela, un client 
           (le navigateur web de l'utilisateur) émet une requête auprès du serveur qui possède 
           les données demandées.</li>
-        <li>Parfois, le serveur peut renvoyer une page web personnalisée, crée à partir 
+        <li>Parfois, le serveur peut renvoyer une page web personnalisée, créee à partir 
           de données envoyées par le client. C'est le cas lorsqu'on remplit un formulaire.</li>
         <li>Le client utilise une requête HTTP (ou HTTPS si elle est chiffrée) pour 
           demander une page web au serveur. Il peut ajouter des données à cette requête, comme 
@@ -506,7 +514,7 @@
           alt="Licence Creative Commons CC BY-NC-SA"></a>
       <p style="text-align: center;">Auteur : David Landry, Lycée Clemenceau - Nantes</p>
       <p style="text-align: center;">D'après des documents partagés par...</p>
-      <p style="text-align: center;"><a  href=https://github.com/parc-nsi/premiere-nsi>
+      <p style="text-align: center;"><a  href=https://parc-nsi.github.io/premiere-nsi/>
         Frédéric Junier, Lycée du Parc - Lyon</a></p>
     </footer>
   </body>
