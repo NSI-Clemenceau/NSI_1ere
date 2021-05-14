@@ -77,6 +77,8 @@ Voici une progression possible :
 |1|NSI_1_5E_Exos_Encodage|
 |1|NSI_1_5EC_Exos_Encodage|
 |1|NSI_1_6A_Aller_plus_loin_avec_du_texte|
+|1|NSI_1_7A_Programmer_un_convertisseur_binaire_decimal|
+|1|NSI_1_7AC_Programmer_un_convertisseur_binaire_decimal|
 |||
 |2|NSI_2_1_Langage_de_programmation_Python|
 |2|NSI_2_2_Variables_et_affectations|
@@ -166,17 +168,19 @@ Voici une progression possible :
 |6|NSI_6_6_Interactions_Client_Serveur|
 |6|NSI_6_6C_Interactions_Client_Serveur|
 |||
-|🚜7|NSI_7_1_Reseau_et_Protocoles_de_communication|
+|7|NSI_7_1_Reseau_et_Protocoles_de_communication|
 |7|NSI_7_2E_Reseau_et_Protocoles_de_communication|
-|🏎7|NSI_7_2EC_Reseau_et_Protocoles_de_communication|
-|7|NSI_7_3_Modeliser_un_Reseau|
-|🚀7|NSI_7_4_Systemes_d_exploitation|
+|7|NSI_7_2EC_Reseau_et_Protocoles_de_communication|
+|🚜7|NSI_7_3_Modeliser_un_Reseau|
+|🏎7|NSI_7_4_Systemes_d_exploitation|
 |||
 |P|NSI_P6_Arborescencia_Droits_et_permissions_UNIX|
 |||
-|7|NSI_7_5_Architecture_materielle|
+|🚀7|NSI_7_5_Architecture_materielle|
 |7|NSI_7_6_Assembleur_et_Langage_machine|
 |||
+|1|NSI_1_8_Ecrire_un_nombre_entier_relatif|
+|1|NSI_1_9_Ecrire_un_nombre_flottant|
 
 ## Licence
 
