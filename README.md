@@ -15,7 +15,7 @@ Ces activités peuvent être :
 - un "fil rouge", organisé comme un projet guidé, sur le thème "Harry Potter" (NSI_PX_...).
 - un mini-projet, point d'étape fonctionnel du fil rouge "Harry Potter" (Dossier Projets).
 
-Ils sont déposés au fur et à mesure de leur élaboration depuis la rentrée 2020 et sont mis à jour au besoin.
+Ils ont été déposés au fur et à mesure de leur élaboration, depuis la rentrée 2020, et sont mis à jour au besoin.
 
 Les sujets d'évaluation, à part les mini-projets, ne sont pas mis en ligne.
 
@@ -180,7 +180,10 @@ Voici une progression possible :
 |7|NSI_7_6_Assembleur_et_Langage_machine|
 |||
 |1|NSI_1_8_Ecrire_un_nombre_entier_relatif|
-|1|NSI_1_9_Ecrire_un_nombre_flottant|
+|1|NSI_1_8C_Ecrire_un_nombre_entier_relatif|
+|1|NSI_1_9A_Manipuler_des_nombres_entiers_relatifs|
+|1|NSI_1_9AC_Manipuler_des_nombres_entiers_relatifs|
+|1|NSI_1_10_Ecrire_un_nombre_flottant|
 
 ## Licence
 
@@ -188,7 +191,7 @@ Les documents déposés ici sont placés sous __[licence CC BY-NC-SA 3.0 FR](htt
 
 __Ces documents ont été le plus souvent construits à partir de travaux de collègues ayant eu la bonne idée de placer leur travail sous une licence permettant le partage à certaines conditions__.
 
-A la fin de chacun de mes documents, je source les auteurs des documents qui m'ont permis de faire ces cours.
+A la fin de chacun de mes documents, je source les auteurs qui m'ont permis de faire ces cours.
 
 __J'en profite pour remercier chaleureusement tous les collègues partageant leur travail d'une façon ou d'une autre__.
 
