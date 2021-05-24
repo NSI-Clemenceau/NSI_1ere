@@ -183,7 +183,8 @@ Voici une progression possible :
 |1|NSI_1_8C_Ecrire_un_nombre_entier_relatif|
 |1|NSI_1_9A_Manipuler_des_nombres_entiers_relatifs|
 |1|NSI_1_9AC_Manipuler_des_nombres_entiers_relatifs|
-|1|NSI_1_10_Ecrire_un_nombre_flottant|
+|1|NSI_1_10_Ecrire_un_nombre_a_virgule|
+|1|NSI_1_10C_Ecrire_un_nombre_a_virgule|
 
 ## Licence
 
