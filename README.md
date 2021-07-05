@@ -15,13 +15,13 @@ Ces activités peuvent être :
 - un "fil rouge", organisé comme un projet guidé, sur le thème "Harry Potter" (NSI_PX_...).
 - un mini-projet, point d'étape fonctionnel du fil rouge "Harry Potter" (Dossier Projets).
 
-Ils ont été déposés au fur et à mesure de leur élaboration, depuis la rentrée 2020, et sont mis à jour au besoin.
+Ils ont été déposés au fur et à mesure de leur élaboration et sont mis à jour au besoin.
 
 Les sujets d'évaluation, à part les mini-projets, ne sont pas mis en ligne.
 
 ## Visualisation / modification et exécution des notebooks
 
-Gitlab ne permet pas d'utiliser, ni même de pleinement visualiser nativement les notebooks Jupyter.
+Gitlab ne permet pas d'utiliser nativement les notebooks Jupyter.
 
 Pour profiter pleinement des notebooks, deux options semblent intéressantes :
 
@@ -54,7 +54,7 @@ L'évaluation tient compte du fond et de la forme.
 
 ## Progression
 
-La progression ne suit pas la numérotation de chapitres.
+La progression ne suit pas toujours la numérotation des chapitres.
 
 Pour vous situer dans la progression, cherchez les émojis !
 
@@ -66,7 +66,7 @@ Voici une progression possible :
 
 | Numéro de chapitre | Nom du fichier |  
 |:----------------:|:------------:|
-|0| NSI_0_Introduction_aux_notebooks|
+|🚜🏎🚀0| NSI_0_Introduction_aux_notebooks|
 |||
 |1|NSI_1_1_Ecrire_un_nombre_entier_positif|
 |1|NSI_1_2_Conversions_décimal_binaire|
@@ -174,7 +174,7 @@ Voici une progression possible :
 |7|NSI_7_3_Modeliser_un_Reseau|
 |7|NSI_7_4_Systemes_d_exploitation|
 |||
-|🚜P|NSI_P6_Arborescencia_Droits_et_permissions_UNIX|
+|P|NSI_P6_Arborescencia_Droits_et_permissions_UNIX|
 |||
 |7|NSI_7_5_Architecture_materielle|
 |7|NSI_7_6_Assembleur_et_Langage_machine|
@@ -183,8 +183,8 @@ Voici une progression possible :
 |1|NSI_1_8C_Ecrire_un_nombre_entier_relatif|
 |1|NSI_1_9A_Manipuler_des_nombres_entiers_relatifs|
 |1|NSI_1_9AC_Manipuler_des_nombres_entiers_relatifs|
-|🏎1|NSI_1_10_Ecrire_un_nombre_a_virgule|
-|🚀1|NSI_1_10C_Ecrire_un_nombre_a_virgule|
+|1|NSI_1_10_Ecrire_un_nombre_a_virgule|
+|1|NSI_1_10C_Ecrire_un_nombre_a_virgule|
 
 ## Licence
 
