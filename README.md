@@ -73,7 +73,8 @@ Voici une progression possible :
 |🚜1|NSI_1_3_Hexadecimal|
 |🏎1|NSI_1_4_Comment_calculer_en_binaire|
 |1|NSI_1_4E_Conversions_décimal_binaire_hexa|
-|🚀1|NSI_1_5_Texte_et_encodage|
+|1|NSI_1_5_Texte_et_encodage|
+|🚀1|NSI_1_5C_Texte_et_encodage|
 |1|NSI_1_5E_Exos_Encodage|
 |1|NSI_1_5EC_Exos_Encodage|
 |1|NSI_1_6A_Aller_plus_loin_avec_du_texte|
@@ -82,7 +83,7 @@ Voici une progression possible :
 |||
 |2|NSI_2_1_Langage_de_programmation_Python|
 |2|NSI_2_2_Variables_et_affectations|
-|2|NSI_2_2Bonus_Gestion_Memoire_Chaines|
+|2|NSI_2_2A_Gestion_de_mémoire_des_chaines_de_caractères|
 |2|NSI_2_3A_Au_coeur_des_variables_et_affectations|
 |2|NSI_2_4_Tests_conditions_et_booléens|
 |2|NSI_2_4E_Tests_conditions_et_booléens|
