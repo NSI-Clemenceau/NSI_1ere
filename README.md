@@ -105,24 +105,24 @@ Voici une progression possible :
 |P|NSI_P1_Le_Choixpeau_magique_Du_CSV_aux_Tables|
 |P|NSI_P1C_Le_Choixpeau_magique_Du_CSV_aux_Tables|
 |||
-|🚜2|NSI_2_9_Les_Fonctions|
+|2|NSI_2_9_Les_Fonctions|
 |2|NSI_2_9C_Les_Fonctions|
 |2|NSI_2_9E_Les_Fonctions|
 |2|NSI_2_9EC_Les_Fonctions|
 |2|NSI_2_10A_Les_Fonctions_avancees|
 |||
-|🏎P|NSI_P2_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
+|P|NSI_P2_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
 |P|NSI_P2C_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
 |||
-|4|NSI_4_1_Algorithmique_et_Pseudo_code|
-|🚀4|NSI_4_2_Les_tris|
+|🚜4|NSI_4_1_Algorithmique_et_Pseudo_code|
+|4|NSI_4_2_Les_tris|
 |4|NSI_4_2C_Les_tris|
 |4|NSI_4_3A_Les_autres_tris|
 |||
-|P|NSI_P3_Harry_se_fait_la_malle (Voir dossier Projets, 1ère partie uniquement)|
+|🏎P|NSI_P3_Harry_se_fait_la_malle (Voir dossier Projets, 1ère partie uniquement)|
 |||
 |5|NSI_5_1_Tables_et_Fichier_CSV_Open_data|
-|5|NSI_5_1C_Tables_et_Fichier_CSV_Open_data|
+|🚀5|NSI_5_1C_Tables_et_Fichier_CSV_Open_data|
 |||
 |P|NSI_P3_Harry_se_fait_la_malle (Voir dossier Projets, 2nde partie)|
 |||
