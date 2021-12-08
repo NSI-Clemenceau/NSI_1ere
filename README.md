@@ -114,19 +114,19 @@ Voici une progression possible :
 |P|NSI_P2_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
 |P|NSI_P2C_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
 |||
-|🚜4|NSI_4_1_Algorithmique_et_Pseudo_code|
+|4|NSI_4_1_Algorithmique_et_Pseudo_code|
 |4|NSI_4_2_Les_tris|
-|4|NSI_4_2C_Les_tris|
+|🚜4|NSI_4_2C_Les_tris|
 |4|NSI_4_3A_Les_autres_tris|
 |||
-|🏎P|NSI_P3_Harry_se_fait_la_malle (Voir dossier Projets, 1ère partie uniquement)|
+|P|NSI_P3_Harry_se_fait_la_malle (Voir dossier Projets, 1ère partie uniquement)|
 |||
-|5|NSI_5_1_Tables_et_Fichier_CSV_Open_data|
-|🚀5|NSI_5_1C_Tables_et_Fichier_CSV_Open_data|
+|🏎5|NSI_5_1_Tables_et_Fichier_CSV_Open_data|
+|5|NSI_5_1C_Tables_et_Fichier_CSV_Open_data|
 |||
 |P|NSI_P3_Harry_se_fait_la_malle (Voir dossier Projets, 2nde partie)|
 |||
-|5|NSI_5_2_Indexation_de_Table|
+|🚀5|NSI_5_2_Indexation_de_Table|
 |5|NSI_5_2C_Indexation_de_Table|
 |5|NSI_5_3_Fusion_de_Tables|
 |||
