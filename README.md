@@ -121,22 +121,22 @@ Voici une progression possible :
 |||
 |P|NSI_P3_Harry_se_fait_la_malle (Voir dossier Projets, 1ère partie uniquement)|
 |||
-|🚜5|NSI_5_1_Tables_et_Fichier_CSV_Open_data|
+|5|NSI_5_1_Tables_et_Fichier_CSV_Open_data|
 |5|NSI_5_1C_Tables_et_Fichier_CSV_Open_data|
 |||
 |P|NSI_P3_Harry_se_fait_la_malle (Voir dossier Projets, 2nde partie)|
 |||
 |5|NSI_5_2_Indexation_de_Table|
-|🏎5|NSI_5_2C_Indexation_de_Table|
+|🚜5|NSI_5_2C_Indexation_de_Table|
 |5|NSI_5_3_Fusion_de_Tables|
 |||
 |P|NSI_P4_Le_Choixpeau_magique_Fusion_de_tables|
-|🚀P|NSI_P4C_Le_Choixpeau_magique_Fusion_de_tables|
+|P|NSI_P4C_Le_Choixpeau_magique_Fusion_de_tables|
 |||
-|4|NSI_4_4_Correction_des_algorithmes_Notion_d_invariant|
+|🏎4|NSI_4_4_Correction_des_algorithmes_Notion_d_invariant|
 |4|NSI_4_4C_Correction_des_algorithmes_Notion_d_invariant|
 |4|NSI_4_5_Terminaison_des_algorithmes_Notion_de_variant|
-|4|NSI_4_5C_Terminaison_des_algorithmes_Notion_de_variant|
+|🚀4|NSI_4_5C_Terminaison_des_algorithmes_Notion_de_variant|
 |4|NSI_4_6_Complexité_des_algorithmes|
 |4|NSI_4_6C_Complexité_des_algorithmes|
 |4|NSI_4_7A_Complexité_des_algorithmes_etudes_experimentales|
