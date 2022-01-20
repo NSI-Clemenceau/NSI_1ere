@@ -8,7 +8,7 @@ Liste de fournitures scolaires
 Auteur : David Landry
 '''
 
-fournitures_scolaires = \
+FOURNITURES_SCOLAIRES = \
 [{'Nom' : 'Manuel scolaire', 'Poids' : 0.55, 'Mana' : 11},
 {'Nom' : 'Baguette magique', 'Poids' : 0.085, 'Mana' : 120},
 {'Nom' : 'Chaudron', 'Poids' : 2.5, 'Mana' : 2},
@@ -20,4 +20,4 @@ fournitures_scolaires = \
 {'Nom' : 'Gants', 'Poids' : 0.6, 'Mana' : 25},
 {'Nom' : 'Cape', 'Poids' : 1.1, 'Mana' : 13}]
 
-poids_maximal = 4
+POIDS_MAXIMAL = 4
