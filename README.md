@@ -148,19 +148,19 @@ Voici une progression possible :
 |4|NSI_4_10A_Optimisation_par_force_brute|
 |4|NSI_4_10AC_Optimisation_par_force_brute|
 |4|NSI_4_11_Algorithme_des_k_plus_proches_voisins|
-|🚜4|NSI_4_12E_Exercices_sur_Algorithme_des_kPPV|
+|4|NSI_4_12E_Exercices_sur_Algorithme_des_kPPV|
 |4|NSI_4_12EC_Exercices_sur_Algorithme_des_kPPV|
 |4|NSI_4_13A_Algorithme_des_k_plus_proches_voisins|
 |4|NSI_4_13AC_Algorithme_des_k_plus_proches_voisins|
 |||
-|🏎P|NSI_P5_Le_Choixpeau_magique (Voir dossier Projets, 1ère partie uniquement)|
+|P|NSI_P5_Le_Choixpeau_magique (Voir dossier Projets, 1ère partie uniquement)|
 |||
-|6|NSI_6_1_HTML|
-|🚀6|NSI_6_2_CSS|
+|🚜6|NSI_6_1_HTML|
+|🏎6|NSI_6_2_CSS|
 |6|NSI_6_3_IHM_Web_Brython|
 |6|NSI_6_3C_IHM_Web_Brython|
 |||
-|P|NSI_P5_Le_Choixpeau_magique (Voir dossier Projets, 2nde partie)|
+|🚀P|NSI_P5_Le_Choixpeau_magique (Voir dossier Projets, 2nde partie)|
 |||
 |6|NSI_6_4_IHM_Web_Javascript|
 |6|NSI_6_4C_IHM_Web_Javascript|
