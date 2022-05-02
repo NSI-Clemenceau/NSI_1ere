@@ -170,10 +170,10 @@ Voici une progression possible :
 |6|NSI_6_6C_Interactions_Client_Serveur|
 |||
 |7|NSI_7_1_Reseau_et_Protocoles_de_communication|
-|🚜7|NSI_7_2E_Reseau_et_Protocoles_de_communication|
+|7|NSI_7_2E_Reseau_et_Protocoles_de_communication|
 |7|NSI_7_2EC_Reseau_et_Protocoles_de_communication|
-|🏎7|NSI_7_3_Modeliser_un_Reseau|
-|7|NSI_7_4_Systemes_d_exploitation|
+|🚜7|NSI_7_3_Modeliser_un_Reseau|
+|🏎7|NSI_7_4_Systemes_d_exploitation|
 |||
 |🚀P|NSI_P6_Arborescencia_Droits_et_permissions_UNIX|
 |||
