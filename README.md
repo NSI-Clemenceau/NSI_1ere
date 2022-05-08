@@ -172,12 +172,12 @@ Voici une progression possible :
 |7|NSI_7_1_Reseau_et_Protocoles_de_communication|
 |7|NSI_7_2E_Reseau_et_Protocoles_de_communication|
 |7|NSI_7_2EC_Reseau_et_Protocoles_de_communication|
-|🚜7|NSI_7_3_Modeliser_un_Reseau|
-|🏎7|NSI_7_4_Systemes_d_exploitation|
+|7|NSI_7_3_Modeliser_un_Reseau|
+|🚜7|NSI_7_4_Systemes_d_exploitation|
 |||
-|🚀P|NSI_P6_Arborescencia_Droits_et_permissions_UNIX|
+|🏎P|NSI_P6_Arborescencia_Droits_et_permissions_UNIX|
 |||
-|7|NSI_7_5_Architecture_materielle|
+|🚀7|NSI_7_5_Architecture_materielle|
 |7|NSI_7_6_Assembleur_et_Langage_machine|
 |||
 |1|NSI_1_8_Ecrire_un_nombre_entier_relatif|
