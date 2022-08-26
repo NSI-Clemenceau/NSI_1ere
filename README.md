@@ -10,9 +10,9 @@ Ces activités peuvent être :
 
 - un moyen de travailler un nouveau thème (numérotation classique NSI_X_X_...).
 - un moyen d'appliquer les nouvellles notions par des exercices (NSI_X_XE_...).
-- des propositions de correction de ces exercices (NSI_X_XC_...).
+- des propositions de correction de ces exercices (NSI_X_XEC_...).
+- une application directe du cours pour aider à faire les mini-projets (NSI_X_XP_...).
 - un moyen d'approfondir un thème, hors programme (NSI_X_XA_...).
-- un "fil rouge", organisé comme un projet guidé, sur le thème "Harry Potter" (NSI_PX_...).
 - un mini-projet, point d'étape fonctionnel du fil rouge "Harry Potter" (Dossier Projets).
 
 Ils ont été déposés au fur et à mesure de leur élaboration et sont mis à jour au besoin.
@@ -66,7 +66,7 @@ Voici une progression possible :
 
 | Numéro de chapitre | Nom du fichier |  
 |:----------------:|:------------:|
-|0| NSI_0_Introduction_aux_notebooks|
+|🚜🏎🚀0| NSI_0_Introduction_aux_notebooks|
 |||
 |1|NSI_1_1_Ecrire_un_nombre_entier_positif|
 |1|NSI_1_2_Conversions_décimal_binaire|
@@ -101,37 +101,34 @@ Voici une progression possible :
 |3|NSI_3_3EC_Type_construit_Les_Dictionnaires|
 |3|NSI_3_4A_Type_construit_Les_Ensembles|
 |3|NSI_3_4AC_Type_construit_Les_Ensembles|
-|||
-|P|NSI_P1_Le_Choixpeau_magique_Du_CSV_aux_Tables|
-|P|NSI_P1C_Le_Choixpeau_magique_Du_CSV_aux_Tables|
+|3|NSI_3_5P_Le_Choixpeau_magique_Du_CSV_aux_Tables|
+|3|NSI_3_5PC_Le_Choixpeau_magique_Du_CSV_aux_Tables|
 |||
 |2|NSI_2_9_Les_Fonctions|
 |2|NSI_2_9C_Les_Fonctions|
 |2|NSI_2_9E_Les_Fonctions|
 |2|NSI_2_9EC_Les_Fonctions|
 |2|NSI_2_10A_Les_Fonctions_avancees|
-|||
-|P|NSI_P2_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
-|P|NSI_P2C_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
+|2|NSI_2_11P_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
+|2|NSI_2_11PC_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
 |||
 |4|NSI_4_1_Algorithmique_et_Pseudo_code|
 |4|NSI_4_2_Les_tris|
 |4|NSI_4_2C_Les_tris|
 |4|NSI_4_3A_Les_autres_tris|
 |||
-|P|NSI_P3_Harry_se_fait_la_malle (Voir dossier Projets, 1ère partie uniquement)|
+|Projets|NSI_Projet_1_Harry_se_fait_la_malle (1ère partie uniquement)|
 |||
 |5|NSI_5_1_Tables_et_Fichier_CSV_Open_data|
 |5|NSI_5_1C_Tables_et_Fichier_CSV_Open_data|
 |||
-|P|NSI_P3_Harry_se_fait_la_malle (Voir dossier Projets, 2nde partie)|
+|Projets|NSI_Projet_1_Harry_se_fait_la_malle (2nde partie)|
 |||
 |5|NSI_5_2_Indexation_de_Table|
 |5|NSI_5_2C_Indexation_de_Table|
 |5|NSI_5_3_Fusion_de_Tables|
-|||
-|P|NSI_P4_Le_Choixpeau_magique_Fusion_de_tables|
-|P|NSI_P4C_Le_Choixpeau_magique_Fusion_de_tables|
+|5|NSI_5_4P_Le_Choixpeau_magique_Fusion_de_tables|
+|5|NSI_5_4PC_Le_Choixpeau_magique_Fusion_de_tables|
 |||
 |4|NSI_4_4_Correction_des_algorithmes_Notion_d_invariant|
 |4|NSI_4_4C_Correction_des_algorithmes_Notion_d_invariant|
@@ -153,14 +150,14 @@ Voici une progression possible :
 |4|NSI_4_13A_Algorithme_des_k_plus_proches_voisins|
 |4|NSI_4_13AC_Algorithme_des_k_plus_proches_voisins|
 |||
-|P|NSI_P5_Le_Choixpeau_magique (Voir dossier Projets, 1ère partie uniquement)|
+|Projets|NSI_Projet_2_Le_Choixpeau_magique (1ère partie uniquement)|
 |||
 |6|NSI_6_1_HTML|
 |6|NSI_6_2_CSS|
 |6|NSI_6_3_IHM_Web_Brython|
 |6|NSI_6_3C_IHM_Web_Brython|
 |||
-|P|NSI_P5_Le_Choixpeau_magique (Voir dossier Projets, 2nde partie)|
+|Projets|NSI_Projet_2_Le_Choixpeau_magique (2nde partie)|
 |||
 |6|NSI_6_4_IHM_Web_Javascript|
 |6|NSI_6_4C_IHM_Web_Javascript|
@@ -174,18 +171,16 @@ Voici une progression possible :
 |7|NSI_7_2EC_Reseau_et_Protocoles_de_communication|
 |7|NSI_7_3_Modeliser_un_Reseau|
 |7|NSI_7_4_Systemes_d_exploitation|
-|||
-|P|NSI_P6_Arborescencia_Droits_et_permissions_UNIX|
-|||
-|7|NSI_7_5_Architecture_materielle|
-|🚜7|NSI_7_6_Assembleur_et_Langage_machine|
+|7|NSI_7_5_Arborescencia_Droits_et_permissions_UNIX|
+|7|NSI_7_6_Architecture_materielle|
+|7|NSI_7_7_Assembleur_et_Langage_machine|
 |||
 |1|NSI_1_8_Ecrire_un_nombre_entier_relatif|
-|🏎1|NSI_1_8C_Ecrire_un_nombre_entier_relatif|
+|1|NSI_1_8C_Ecrire_un_nombre_entier_relatif|
 |1|NSI_1_9A_Manipuler_des_nombres_entiers_relatifs|
 |1|NSI_1_9AC_Manipuler_des_nombres_entiers_relatifs|
 |1|NSI_1_10_Ecrire_un_nombre_a_virgule|
-|🚀1|NSI_1_10C_Ecrire_un_nombre_a_virgule|
+|1|NSI_1_10C_Ecrire_un_nombre_a_virgule|
 
 ## Licence
 
