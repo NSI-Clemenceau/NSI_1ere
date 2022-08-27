@@ -34,11 +34,13 @@ Pour profiter pleinement des notebooks, deux options semblent intéressantes :
 
 Les élèves sont accompagnés pour travailler ces notebooks. Ils doivent les compléter / annoter afin d'en faire un __support de cours et de révision__.
 
-### En bref !
+### Le Petit Oral
 
 Chaque début de cours est ponctué d'un (ou plusieurs) __exposés à oral__, chacun effectué par un seul élève.
 
-Cet exposé, appelé __"En Bref !"__, a pour sujet (au choix de l'élève) :
+Cet exposé, appelé __"Le Petit Oral"__, est bien entendu un prétexte pour se préparer au Grand Oral du bac, tout en consolidant les bases du cours et en enrichissant sa culture personnelle numérique.
+
+Le Petit Oral a pour sujet (au choix de l'élève) :
 
 - un point particulier à détailler, sur le dernier thème abordé.
 - une actualité.
@@ -60,7 +62,7 @@ Pour vous situer dans la progression, cherchez les émojis !
 
 - 🚜 Vous êtes un peu en retard, il est temps de mettre les bouchées doubles !
 - 🏎 Vous êtes dans le rythme, ne changez rien.
-- 🚀 Vous êtes plutôt en avance donc profitez-en pour approfondir votre sujet. Soit en refaisant / relisant d'anciens notebooks mals compris, soit en étoffant votre projet ou encore en préparant un "En bref !" de grande qualité.
+- 🚀 Vous êtes plutôt en avance donc profitez-en pour approfondir votre sujet. Soit en refaisant / relisant d'anciens notebooks mals compris, soit en étoffant votre projet ou encore en préparant un Petit Oral de grande qualité.
 
 Voici une progression possible :
 
