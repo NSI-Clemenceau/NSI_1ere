@@ -119,13 +119,10 @@ Voici une progression possible :
 |4|NSI_4_2C_Les_tris|
 |4|NSI_4_3A_Les_autres_tris|
 |||
-|Projets|NSI_Projet_1_Harry_se_fait_la_malle (1ère partie uniquement)|
+|Projets|NSI_Projet_1_Harry_se_fait_la_malle|
 |||
 |5|NSI_5_1_Tables_et_Fichier_CSV_Open_data|
 |5|NSI_5_1C_Tables_et_Fichier_CSV_Open_data|
-|||
-|Projets|NSI_Projet_1_Harry_se_fait_la_malle (2nde partie)|
-|||
 |5|NSI_5_2_Indexation_de_Table|
 |5|NSI_5_2C_Indexation_de_Table|
 |5|NSI_5_3_Fusion_de_Tables|
