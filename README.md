@@ -68,12 +68,12 @@ Voici une progression possible :
 
 | Numéro de chapitre | Nom du fichier |  
 |:----------------:|:------------:|
-|🚜🏎0| NSI_0_Introduction_aux_notebooks|
+|0| NSI_0_Introduction_aux_notebooks|
 |||
-|1|NSI_1_1_Ecrire_un_nombre_entier_positif|
-|🚀1|NSI_1_2_Conversions_décimal_binaire|
+|🚜1|NSI_1_1_Ecrire_un_nombre_entier_positif|
+|🏎1|NSI_1_2_Conversions_décimal_binaire|
 |1|NSI_1_3_Hexadecimal|
-|1|NSI_1_4_Comment_calculer_en_binaire|
+|🚀1|NSI_1_4_Comment_calculer_en_binaire|
 |1|NSI_1_4E_Conversions_décimal_binaire_hexa|
 |1|NSI_1_5_Texte_et_encodage|
 |1|NSI_1_5C_Texte_et_encodage|
