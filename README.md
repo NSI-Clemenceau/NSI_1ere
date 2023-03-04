@@ -154,14 +154,14 @@ Voici une progression possible :
 |6|NSI_6_1_HTML|
 |6|NSI_6_2_CSS|
 |6|NSI_6_3_IHM_Web_Brython|
-|🚜6|NSI_6_3C_IHM_Web_Brython|
+|6|NSI_6_3C_IHM_Web_Brython|
 |||
 |Projets|NSI_Projet_2_Le_Choixpeau_magique (2nde partie)|
 |||
-|🏎6|NSI_6_4_IHM_Web_Javascript|
+|🚜6|NSI_6_4_IHM_Web_Javascript|
 |6|NSI_6_4C_IHM_Web_Javascript|
 |6|NSI_6_5_IHM_Web_Formulaires|
-|6|NSI_6_5C_IHM_Web_Formulaires|
+|🏎6|NSI_6_5C_IHM_Web_Formulaires|
 |6|NSI_6_6_Interactions_Client_Serveur|
 |🚀6|NSI_6_6C_Interactions_Client_Serveur|
 |||
