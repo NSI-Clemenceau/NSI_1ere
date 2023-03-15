@@ -25,13 +25,17 @@ function choix() {
     const nsi = document.getElementById("nsi").checked;
     const math = document.getElementById("ma").checked;
     const svt = document.getElementById("svt").checked;
+
+    /* affiche la valeur de nsi pour savoir si la case nsi a été cochée */
     console.log(nsi);
+
     let affichage = ""
+
     if ((nsi && !math && !svt) || (svt && !nsi && !math) || (math && !nsi && !svt)) {
-        affichage = "Tu dois choisir deux spécialités !"
+        affichage = "Tu dois choisir deux spécialités !";
     } else {
         if (nsi && math && svt) {
-            affichage = "Tu ne peux conserver que deux spécialités !"
+            affichage = "Tu ne peux conserver que deux spécialités !";
         } else {
             if (nsi) {
                 affichage = " Tu conserves NSI. Bravo bon choix !</br>";
@@ -44,5 +48,5 @@ function choix() {
             }
         }
 	}
-    document.getElementById('choix_spe').innerHTML = affichage
+    document.getElementById('choix_spe').innerHTML = affichage;
 }

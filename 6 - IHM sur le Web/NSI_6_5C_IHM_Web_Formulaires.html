@@ -194,9 +194,9 @@
         <p>Qualité :
         Monsieur <input type="radio" name="qual" value="M"/>
         Madame <input type="radio" name="qual" value="F"/></p>
-        <p>Nom : .*.<input type="text" name="nom"/></p>
-        <p>e-mail : .*.<input type="email" name="mail"/></p>
-        <p>Mot de passe : .*.<input type="passwd" name="pass"/></p>
+        <p>Nom : .*.<input type="text" name="nom" required/></p>
+        <p>e-mail : .*.<input type="email" name="mail" required/></p>
+        <p>Mot de passe : .*.<input type="passwd" name="pass" required/></p>
         <h3>Informations de paiement</h3>
         <p>Type de carte : 
             <select name="menu">
@@ -204,8 +204,8 @@
                 <option value="Bleue" selected>Bleue</option>
             </select>
         </p>
-        <p>Numéro : .*.<input type="text" name="num"/></p>
-        <p>Validité : .*.<input type="text" name="valid"/></p>
+        <p>Numéro : .*.<input type="text" name="num" required/></p>
+        <p>Validité : .*.<input type="text" name="valid" required/></p>
         <p><em>format mm/aa</em></p>
         <p><input type="submit" value="Valider le paiement"></p>
       </form>

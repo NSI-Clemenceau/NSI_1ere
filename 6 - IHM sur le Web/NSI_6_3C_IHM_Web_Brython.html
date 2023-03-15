@@ -48,7 +48,7 @@
       def compte(ev):
         global i
         i += 1
-        document["bouton_compteur"].textContent = f"Vous avez cliqué {str(i)} fois sur ce compteur"
+        document["bouton_compteur"].textContent = f"Vous avez cliqué {i} fois sur ce compteur"
       document["bouton_compteur"].bind("click", compte)
       
     </script>
