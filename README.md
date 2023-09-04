@@ -68,7 +68,7 @@ Voici une progression possible :
 
 | Numéro de chapitre | Nom du fichier |  
 |:----------------:|:------------:|
-|0| NSI_0_Introduction_aux_notebooks|
+|🚜🏎🚀0| NSI_0_Introduction_aux_notebooks|
 |||
 |1|NSI_1_1_Ecrire_un_nombre_entier_positif|
 |1|NSI_1_2_Conversions_décimal_binaire|
@@ -179,7 +179,7 @@ Voici une progression possible :
 |1|NSI_1_9A_Manipuler_des_nombres_entiers_relatifs|
 |1|NSI_1_9AC_Manipuler_des_nombres_entiers_relatifs|
 |1|NSI_1_10_Ecrire_un_nombre_a_virgule|
-|🚜🏎🚀1|NSI_1_10C_Ecrire_un_nombre_a_virgule|
+|1|NSI_1_10C_Ecrire_un_nombre_a_virgule|
 
 ## Licence
 
