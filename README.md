@@ -90,8 +90,9 @@ Voici une progression possible :
 |2|NSI_2_4_Tests_conditions_et_booléens|
 |2|NSI_2_4E_Tests_conditions_et_booléens|
 |2|NSI_2_4C_Tests_conditions_et_booléens|
+|2|NSI_2_4EC_Tests_conditions_et_booléens|
 |2|NSI_2_5A_Tests_et_exceptions|
-|2|NSI_2_6_Boucle_bornée_Pour|
+|🚜2|NSI_2_6_Boucle_bornée_Pour|
 |2|NSI_2_7_Boucle_non_bornée_Tant_que|
 |2|NSI_2_8E_Exercices_sur_les_boucles|
 |🚜2|NSI_2_8EC_Exercices_sur_les_boucles|
