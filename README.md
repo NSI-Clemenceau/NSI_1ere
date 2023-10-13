@@ -79,7 +79,7 @@ Voici une progression possible :
 |1|NSI_1_5C_Texte_et_encodage|
 |1|NSI_1_5E_Exos_Encodage|
 |1|NSI_1_5EC_Exos_Encodage|
-|1|NSI_1_6A_Aller_plus_loin_avec_du_texte|
+|1|NSI_1_6_Aller_plus_loin_avec_du_texte|
 |1|NSI_1_7A_Programmer_un_convertisseur_binaire_decimal|
 |1|NSI_1_7AC_Programmer_un_convertisseur_binaire_decimal|
 |||
