@@ -26,7 +26,7 @@ Gitlab ne permet pas d'utiliser nativement les notebooks Jupyter.
 Pour profiter pleinement des notebooks, deux options semblent intéressantes :
 
 - __cloner ce dépôt__, puis en profiter en local.
-- utiliser ce lien __Binder__ pour une utilisation "en ligne" [![Binder](https://mybinder.org/v2/git/https%3A%2F%2Fforge.apps.education.fr%2Fdavid_landry%2FNSI_1ere/HEAD) (mais il faut être patient, l'initialisation est très longue...)
+- utiliser ce lien __Binder__ pour une utilisation "en ligne" [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fforge.apps.education.fr%2Fdavid_landry%2FNSI_1ere/HEAD) (mais il faut être patient, l'initialisation est très longue...)
 
 ## Méthodologie pédagogique
 
