@@ -184,7 +184,7 @@ Voici une progression possible :
 
 ## Licence
 
-Les documents déposés ici sont placés sous __[licence CC BY-NC-SA 3.0 FR](https://creativecommons.org/licenses/by-nc-sa/3.0/fr/)__.
+Les documents déposés ici sont placés sous __[licence CC BY-NC-SA 4.0 FR](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr)__.
 
 __Ces documents ont été le plus souvent construits à partir de travaux de collègues ayant eu la bonne idée de placer leur travail sous une licence permettant le partage à certaines conditions__.
 
