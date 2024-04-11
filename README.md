@@ -66,121 +66,122 @@ Pour vous situer dans la progression, cherchez les émojis !
 
 Voici une progression possible :
 
-| Numéro de chapitre | Nom du fichier |  
-|:----------------:|:------------:|
-|0| NSI_0_Introduction_aux_notebooks|
-|||
-|1|NSI_1_1_Ecrire_un_nombre_entier_positif|
-|1|NSI_1_2_Conversions_décimal_binaire|
-|1|NSI_1_3_Hexadecimal|
-|1|NSI_1_4_Comment_calculer_en_binaire|
-|1|NSI_1_4E_Conversions_décimal_binaire_hexa|
-|1|NSI_1_5_Texte_et_encodage|
-|1|NSI_1_5C_Texte_et_encodage|
-|1|NSI_1_5E_Exos_Encodage|
-|1|NSI_1_5EC_Exos_Encodage|
-|1|NSI_1_6_Aller_plus_loin_avec_du_texte|
-|1|NSI_1_7A_Programmer_un_convertisseur_binaire_decimal|
-|1|NSI_1_7AC_Programmer_un_convertisseur_binaire_decimal|
-|||
-|2|NSI_2_1_Langage_de_programmation_Python|
-|2|NSI_2_2_Variables_et_affectations|
-|2|NSI_2_2A_Gestion_de_mémoire_des_chaines_de_caractères|
-|2|NSI_2_3A_Au_coeur_des_variables_et_affectations|
-|2|NSI_2_4_Tests_conditions_et_booléens|
-|2|NSI_2_4E_Tests_conditions_et_booléens|
-|2|NSI_2_4C_Tests_conditions_et_booléens|
-|2|NSI_2_4EC_Tests_conditions_et_booléens|
-|2|NSI_2_5A_Tests_et_exceptions|
-|2|NSI_2_6_Boucle_bornée_Pour|
-|2|NSI_2_7_Boucle_non_bornée_Tant_que|
-|2|NSI_2_8E_Exercices_sur_les_boucles|
-|2|NSI_2_8EC_Exercices_sur_les_boucles|
-|||
-|3|NSI_3_1_Type_construit_Les_Tuples|
-|3|NSI_3_2_Type_construit_Les_Tableaux|
-|3|NSI_3_3_Type_construit_Les_Dictionnaires|
-|3|NSI_3_3E_Type_construit_Les_Dictionnaires|
-|3|NSI_3_3EC_Type_construit_Les_Dictionnaires|
-|3|NSI_3_4A_Type_construit_Les_Ensembles|
-|3|NSI_3_4AC_Type_construit_Les_Ensembles|
-|3|NSI_3_5P_Le_Choixpeau_magique_Du_CSV_aux_Tables|
-|3|NSI_3_5PC_Le_Choixpeau_magique_Du_CSV_aux_Tables|
-|||
-|2|NSI_2_9_Les_Fonctions|
-|2|NSI_2_9C_Les_Fonctions|
-|2|NSI_2_9E_Les_Fonctions|
-|2|NSI_2_9EC_Les_Fonctions|
-|2|NSI_2_10A_Les_Fonctions_avancees|
-|2|NSI_2_11P_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
-|2|NSI_2_11PC_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables|
-|||
-|4|NSI_4_1_Algorithmique_et_Pseudo_code|
-|4|NSI_4_2_Les_tris|
-|4|NSI_4_2C_Les_tris|
-|4|NSI_4_3A_Les_autres_tris|
-|||
-|Projets|NSI_Projet_1_Harry_se_fait_la_malle|
-|||
-|5|NSI_5_1_Tables_et_Fichier_CSV_Open_data|
-|5|NSI_5_1C_Tables_et_Fichier_CSV_Open_data|
-|5|NSI_5_2_Indexation_de_Table|
-|5|NSI_5_2C_Indexation_de_Table|
-|5|NSI_5_3_Fusion_de_Tables|
-|5|NSI_5_4P_Le_Choixpeau_magique_Fusion_de_tables|
-|5|NSI_5_4PC_Le_Choixpeau_magique_Fusion_de_tables|
-|||
-|4|NSI_4_4_Correction_des_algorithmes_Notion_d_invariant|
-|4|NSI_4_4C_Correction_des_algorithmes_Notion_d_invariant|
-|4|NSI_4_5_Terminaison_des_algorithmes_Notion_de_variant|
-|4|NSI_4_5C_Terminaison_des_algorithmes_Notion_de_variant|
-|4|NSI_4_6_Complexité_des_algorithmes|
-|4|NSI_4_6C_Complexité_des_algorithmes|
-|4|NSI_4_7A_Complexité_des_algorithmes_etudes_experimentales|
-|4|NSI_4_7AC_Complexité_des_algorithmes_etudes_experimentales|
-|4|NSI_4_8_Recherche_dichotomique|
-|4|NSI_4_8C_Recherche_dichotomique|
-|4|NSI_4_9_Algorithmes_gloutons|
-|4|NSI_4_9C_Algorithmes_gloutons|
-|4|NSI_4_10A_Optimisation_par_force_brute|
-|4|NSI_4_10AC_Optimisation_par_force_brute|
-|4|NSI_4_11_Algorithme_des_k_plus_proches_voisins|
-|4|NSI_4_12E_Exercices_sur_Algorithme_des_kPPV|
-|4|NSI_4_12EC_Exercices_sur_Algorithme_des_kPPV|
-|4|NSI_4_13A_Algorithme_des_k_plus_proches_voisins|
-|4|NSI_4_13AC_Algorithme_des_k_plus_proches_voisins|
-|||
-|Projets|NSI_Projet_2_Le_Choixpeau_magique (1ère partie uniquement)|
-|||
-|6|NSI_6_1_HTML|
-|6|NSI_6_2_CSS|
-|6|NSI_6_3_IHM_Web_Brython|
-|6|NSI_6_3C_IHM_Web_Brython|
-|||
-|Projets|NSI_Projet_2_Le_Choixpeau_magique (2nde partie)|
-|||
-|6|NSI_6_4_IHM_Web_Javascript|
-|6|NSI_6_4C_IHM_Web_Javascript|
-|6|NSI_6_5_IHM_Web_Formulaires|
-|6|NSI_6_5C_IHM_Web_Formulaires|
-|6|NSI_6_6_Interactions_Client_Serveur|
-|6|NSI_6_6C_Interactions_Client_Serveur|
-|||
-|7|NSI_7_1_Reseau_et_Protocoles_de_communication|
-|7|NSI_7_2E_Reseau_et_Protocoles_de_communication|
-|7|NSI_7_2EC_Reseau_et_Protocoles_de_communication|
-|7|NSI_7_3_Modeliser_un_Reseau|
-|7|NSI_7_4_Systemes_d_exploitation|
-|7|NSI_7_5_Arborescencia_Droits_et_permissions_UNIX|
-|🚜7|NSI_7_6_Architecture_materielle|
-|🏎7|NSI_7_7_Assembleur_et_Langage_machine|
-|||
-|🚀1|NSI_1_8_Ecrire_un_nombre_entier_relatif|
-|1|NSI_1_8C_Ecrire_un_nombre_entier_relatif|
-|1|NSI_1_9A_Manipuler_des_nombres_entiers_relatifs|
-|1|NSI_1_9AC_Manipuler_des_nombres_entiers_relatifs|
-|1|NSI_1_10_Ecrire_un_nombre_a_virgule|
-|1|NSI_1_10C_Ecrire_un_nombre_a_virgule|
+
+| Numéro de chapitre | Nom du fichier |
+| :-: | :-: |
+| 0 | NSI_0_Introduction_aux_notebooks |
+|   |   |
+| 1 | NSI_1_1_Ecrire_un_nombre_entier_positif |
+| 1 | NSI_1_2_Conversions_décimal_binaire |
+| 1 | NSI_1_3_Hexadecimal |
+| 1 | NSI_1_4_Comment_calculer_en_binaire |
+| 1 | NSI_1_4E_Conversions_décimal_binaire_hexa |
+| 1 | NSI_1_5_Texte_et_encodage |
+| 1 | NSI_1_5C_Texte_et_encodage |
+| 1 | NSI_1_5E_Exos_Encodage |
+| 1 | NSI_1_5EC_Exos_Encodage |
+| 1 | NSI_1_6_Aller_plus_loin_avec_du_texte |
+| 1 | NSI_1_7A_Programmer_un_convertisseur_binaire_decimal |
+| 1 | NSI_1_7AC_Programmer_un_convertisseur_binaire_decimal |
+|   |   |
+| 2 | NSI_2_1_Langage_de_programmation_Python |
+| 2 | NSI_2_2_Variables_et_affectations |
+| 2 | NSI_2_2A_Gestion_de_mémoire_des_chaines_de_caractères |
+| 2 | NSI_2_3A_Au_coeur_des_variables_et_affectations |
+| 2 | NSI_2_4_Tests_conditions_et_booléens |
+| 2 | NSI_2_4E_Tests_conditions_et_booléens |
+| 2 | NSI_2_4C_Tests_conditions_et_booléens |
+| 2 | NSI_2_4EC_Tests_conditions_et_booléens |
+| 2 | NSI_2_5A_Tests_et_exceptions |
+| 2 | NSI_2_6_Boucle_bornée_Pour |
+| 2 | NSI_2_7_Boucle_non_bornée_Tant_que |
+| 2 | NSI_2_8E_Exercices_sur_les_boucles |
+| 2 | NSI_2_8EC_Exercices_sur_les_boucles |
+|   |   |
+| 3 | NSI_3_1_Type_construit_Les_Tuples |
+| 3 | NSI_3_2_Type_construit_Les_Tableaux |
+| 3 | NSI_3_3_Type_construit_Les_Dictionnaires |
+| 3 | NSI_3_3E_Type_construit_Les_Dictionnaires |
+| 3 | NSI_3_3EC_Type_construit_Les_Dictionnaires |
+| 3 | NSI_3_4A_Type_construit_Les_Ensembles |
+| 3 | NSI_3_4AC_Type_construit_Les_Ensembles |
+| 3 | NSI_3_5P_Le_Choixpeau_magique_Du_CSV_aux_Tables |
+| 3 | NSI_3_5PC_Le_Choixpeau_magique_Du_CSV_aux_Tables |
+|   |   |
+| 2 | NSI_2_9_Les_Fonctions |
+| 2 | NSI_2_9C_Les_Fonctions |
+| 2 | NSI_2_9E_Les_Fonctions |
+| 2 | NSI_2_9EC_Les_Fonctions |
+| 2 | NSI_2_10A_Les_Fonctions_avancees |
+| 2 | NSI_2_11P_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables |
+| 2 | NSI_2_11PC_Le_Choixpeau_magique_Fonction_du_CSV_aux_Tables |
+|   |   |
+| 4 | NSI_4_1_Algorithmique_et_Pseudo_code |
+| 4 | NSI_4_2_Les_tris |
+| 4 | NSI_4_2C_Les_tris |
+| 4 | NSI_4_3A_Les_autres_tris |
+|   |   |
+| Projets | NSI_Projet_1_Harry_se_fait_la_malle |
+|   |   |
+| 5 | NSI_5_1_Tables_et_Fichier_CSV_Open_data |
+| 5 | NSI_5_1C_Tables_et_Fichier_CSV_Open_data |
+| 5 | NSI_5_2_Indexation_de_Table |
+| 5 | NSI_5_2C_Indexation_de_Table |
+| 5 | NSI_5_3_Fusion_de_Tables |
+| 5 | NSI_5_4P_Le_Choixpeau_magique_Fusion_de_tables |
+| 5 | NSI_5_4PC_Le_Choixpeau_magique_Fusion_de_tables |
+|   |   |
+| 4 | NSI_4_4_Correction_des_algorithmes_Notion_d_invariant |
+| 4 | NSI_4_4C_Correction_des_algorithmes_Notion_d_invariant |
+| 4 | NSI_4_5_Terminaison_des_algorithmes_Notion_de_variant |
+| 4 | NSI_4_5C_Terminaison_des_algorithmes_Notion_de_variant |
+| 4 | NSI_4_6_Complexité_des_algorithmes |
+| 4 | NSI_4_6C_Complexité_des_algorithmes |
+| 4 | NSI_4_7A_Complexité_des_algorithmes_etudes_experimentales |
+| 4 | NSI_4_7AC_Complexité_des_algorithmes_etudes_experimentales |
+| 4 | NSI_4_8_Recherche_dichotomique |
+| 4 | NSI_4_8C_Recherche_dichotomique |
+| 4 | NSI_4_9_Algorithmes_gloutons |
+| 4 | NSI_4_9C_Algorithmes_gloutons |
+| 4 | NSI_4_10A_Optimisation_par_force_brute |
+| 4 | NSI_4_10AC_Optimisation_par_force_brute |
+| 4 | NSI_4_11_Algorithme_des_k_plus_proches_voisins |
+| 4 | NSI_4_12E_Exercices_sur_Algorithme_des_kPPV |
+| 4 | NSI_4_12EC_Exercices_sur_Algorithme_des_kPPV |
+| 4 | NSI_4_13A_Algorithme_des_k_plus_proches_voisins |
+| 4 | NSI_4_13AC_Algorithme_des_k_plus_proches_voisins |
+|   |   |
+| Projets | NSI_Projet_2_Le_Choixpeau_magique (1ère partie uniquement) |
+|   |   |
+| 6 | NSI_6_1_HTML |
+| 6 | NSI_6_2_CSS |
+| 6 | NSI_6_3_IHM_Web_Brython |
+| 6 | NSI_6_3C_IHM_Web_Brython |
+|   |   |
+| Projets | NSI_Projet_2_Le_Choixpeau_magique (2nde partie) |
+|   |   |
+| 6 | NSI_6_4_IHM_Web_Javascript |
+| 6 | NSI_6_4C_IHM_Web_Javascript |
+| 6 | NSI_6_5_IHM_Web_Formulaires |
+| 6 | NSI_6_5C_IHM_Web_Formulaires |
+| 6 | NSI_6_6_Interactions_Client_Serveur |
+| 6 | NSI_6_6C_Interactions_Client_Serveur |
+|   |   |
+| 7 | NSI_7_1_Reseau_et_Protocoles_de_communication |
+| 7 | NSI_7_2E_Reseau_et_Protocoles_de_communication |
+| 7 | NSI_7_2EC_Reseau_et_Protocoles_de_communication |
+| 7 | NSI_7_3_Modeliser_un_Reseau |
+| 7 | NSI_7_4_Systemes_d_exploitation |
+| 7 | NSI_7_5_Arborescencia_Droits_et_permissions_UNIX |
+| 🚜7 | NSI_7_6_Architecture_materielle |
+| 🏎7 | NSI_7_7_Assembleur_et_Langage_machine |
+|   |   |
+| 🚀1 | NSI_1_8_Ecrire_un_nombre_entier_relatif |
+| 1 | NSI_1_8C_Ecrire_un_nombre_entier_relatif |
+| 1 | NSI_1_9A_Manipuler_des_nombres_entiers_relatifs |
+| 1 | NSI_1_9AC_Manipuler_des_nombres_entiers_relatifs |
+| 1 | NSI_1_10_Ecrire_un_nombre_a_virgule |
+| 1 | NSI_1_10C_Ecrire_un_nombre_a_virgule |
 
 ## Licence
 
