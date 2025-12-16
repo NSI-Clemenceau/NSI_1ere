@@ -1,5 +1,5 @@
 # Nouvelle forge à l'adresse : 
-# ✨✨✨ [forge.apps.education.fr/nsi-clemenceau](https://forge.apps.education.fr/nsi-clemenceau/nsi-1ere) ✨✨✨
+# ✨ [forge.apps.education.fr/nsi-clemenceau](https://forge.apps.education.fr/nsi-clemenceau/nsi-1ere) ✨
 ## Ce dépôt github est obsolète, je vous invite à cliquer sur le lien ci-dessus 👆 pour bénéficier des dernières mises à jour 
 
 # Et pour des ressources en SNT (cours, oraux), c'est ici :
